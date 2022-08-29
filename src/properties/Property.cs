@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Com.Surbon.GDUtils.Properties
+﻿namespace Com.Surbon.GDUtils
 {
 	public static class Property
 	{
@@ -62,31 +58,31 @@ namespace Com.Surbon.GDUtils.Properties
 
 				#region AUDIO LISTENER
 
-				public const string ENABLE_2D = "audio_listener_enable_2d";
-				public const string ENABLE_3D = "audio_listener_enable_3d";
+				public const string AUDIO_LISTENER_ENABLE_2D = "audio_listener_enable_2d";
+				public const string AUDIO_LISTENER_ENABLE_3D = "audio_listener_enable_3d";
 
 				#endregion AUDIO LISTENER
 
 				#region PHYSICS
 
-				public const string OBJECT_PICKING = "physics_object_picking";
+				public const string PHYSICS_OBJECT_PICKING = "physics_object_picking";
 
 				#endregion PHYSICS
 
 				#region GUI
 
-				public const string DISABLE_INPUT = "gui_disable_input";
-				public const string SNAP_CONTROLS_TO_PIXELS = "gui_snap_controls_to_pixels";
+				public const string GUI_DISABLE_INPUT = "gui_disable_input";
+				public const string GUI_SNAP_CONTROLS_TO_PIXELS = "gui_snap_controls_to_pixels";
 
 				#endregion GUI
 
 				#region SHADOW ATLAS
 
 				public const string SHADOW_ATLAS_SIZE = "shadow_atlas_size";
-				public const string QUAD_0 = "shadow_atlas_quad_0";
-				public const string QUAD_1 = "shadow_atlas_quad_1";
-				public const string QUAD_2 = "shadow_atlas_quad_2";
-				public const string QUAD_3 = "shadow_atlas_quad_3";
+				public const string SHADOW_ATLAS_QUAD_0 = "shadow_atlas_quad_0";
+				public const string SHADOW_ATLAS_QUAD_1 = "shadow_atlas_quad_1";
+				public const string SHADOW_ATLAS_QUAD_2 = "shadow_atlas_quad_2";
+				public const string SHADOW_ATLAS_QUAD_3 = "shadow_atlas_quad_3";
 
 				#endregion SHADOW ATLAS
 			}
