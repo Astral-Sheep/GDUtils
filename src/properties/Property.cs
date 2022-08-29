@@ -12,6 +12,14 @@ namespace Com.Surbon.GDUtils.Properties
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class Timer
+			{
+				public const string PROCESS_MODE = "process_mode";
+				public const string WAIT_TIME = "wait_time";
+				public const string ONE_SHOT = "one_shot";
+				public const string AUTOSTART = "autostart";
+			}
+
 			public static class Tween
 			{
 				public const string REPEAT = "repeat";
