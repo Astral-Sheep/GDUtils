@@ -8,6 +8,22 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class AnimationPlayer
+			{
+				public const string ROOT_NODE = "root_node";
+				public const string CURRENT_ANIMATION = "current_animation";
+				public const string RESET_ON_SAVE = "reset_on_save";
+				public const string METHOD_CALL_MODE = "method_call_mode";
+
+				#region PLAYBACK OPTIONS
+
+				public const string PLAYBACK_PROCESS_MODE = "playback_process_mode";
+				public const string PLAYBACK_DEFAULT_BLEND_TIME = "playback_default_blend_time";
+				public const string PLAYBACK_SPEED = "playback_speed";
+
+				#endregion PLAYBACK OPTIONS
+			}
+
 			public static class AnimationTree
 			{
 				public const string TREE_ROOT = "tree_root";
