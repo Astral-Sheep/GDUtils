@@ -3,7 +3,7 @@ using System;
 
 namespace Com.Surbon.GDUtils.Game
 {
-	public class GameObject : Node, IGameObject
+	public class GameObject : Node, IStateMachine
 	{
 		protected Action<float> DoAction;
 
@@ -23,16 +23,16 @@ namespace Com.Surbon.GDUtils.Game
 
 		public void Start() { SetModeNormal(); }
 
-		void IGameObject.SetModeVoid() { SetModeVoid(); }
+		void IStateMachine.SetModeVoid() { SetModeVoid(); }
 		protected void SetModeVoid() { DoAction = DoActionVoid; }
 
-		void IGameObject.SetModeNormal() { SetModeNormal(); }
+		void IStateMachine.SetModeNormal() { SetModeNormal(); }
 		protected void SetModeNormal() { DoAction = DoActionNormal; }
 
-		void IGameObject.DoActionVoid(float pDelta) { DoActionVoid(pDelta); }
+		void IStateMachine.DoActionVoid(float pDelta) { DoActionVoid(pDelta); }
 		protected void DoActionVoid(float pDelta) { }
 
-		void IGameObject.DoActionNormal(float pDelta) { DoActionNormal(pDelta); }
+		void IStateMachine.DoActionNormal(float pDelta) { DoActionNormal(pDelta); }
 		protected void DoActionNormal(float pDelta) { }
 	}
 }

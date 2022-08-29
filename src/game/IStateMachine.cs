@@ -1,6 +1,6 @@
 ﻿namespace Com.Surbon.GDUtils.Game
 {
-	public interface IGameObject
+	public interface IStateMachine
 	{
 		public void Start();
 		public void SetModeVoid();
