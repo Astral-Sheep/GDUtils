@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="GodotSharp">
+      <HintPath>libraries\GodotSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GodotSharpEditor">
+      <HintPath>libraries\GodotSharpEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
