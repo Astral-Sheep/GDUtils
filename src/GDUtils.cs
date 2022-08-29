@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GDUtils
+namespace Com.Surbon.GDUtils
 {
 	public class GDUtils
 	{
