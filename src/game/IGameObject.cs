@@ -1,7 +1,4 @@
-﻿using Godot;
-using System;
-
-namespace Com.Surbon.GDUtils
+﻿namespace Com.Surbon.GDUtils.Game
 {
 	public interface IGameObject
 	{
