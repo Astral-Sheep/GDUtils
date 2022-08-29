@@ -8,6 +8,24 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class CanvasLayer
+			{
+				#region LAYER
+
+				public const string LAYER = "layer";
+
+				#endregion LAYER
+
+				#region TRANSFORM
+
+				public const string OFFSET = "offset";
+				public const string ROTATION_DEGREES = "rotation_degrees";
+				public const string SCALE = "scale";
+				public const string TRANSFORM = "transform";
+
+				#endregion TRANSFORM
+			}
+
 			public static class HTTPRequest
 			{
 				public const string DOWNLOAD_FILE = "download_file";
