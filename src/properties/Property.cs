@@ -8,6 +8,14 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class AnimationTreePlayer
+			{
+				public const string MASTER_PLAYER = "master_player";
+				public const string BASE_PATH = "base_path";
+				public const string ACTIVE = "active";
+				public const string PLAYBACK_PROCESS_MODE = "playback_process_mode";
+			}
+
 			public static class AudioStreamPlayer
 			{
 				public const string STREAM = "stream";
