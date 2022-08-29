@@ -8,6 +8,15 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class AnimationTree
+			{
+				public const string TREE_ROOT = "tree_root";
+				public const string ANIM_PLAYER = "anim_player";
+				public const string ACTIVE = "active";
+				public const string PROCESS_MODE = "process_mode";
+				public const string ROOT_MOTION_TRACK = "root_motion_track";
+			}
+
 			public static class AnimationTreePlayer
 			{
 				public const string MASTER_PLAYER = "master_player";
