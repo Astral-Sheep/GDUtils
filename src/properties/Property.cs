@@ -11,6 +11,11 @@ namespace Com.Surbon.GDUtils.Properties
 			public const string PAUSE_MODE = "pause_mode";
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
+
+			public static class WorldEnvironment
+			{
+				public const string ENVIRONMENT = "environment";
+			}
 		}
 	}
 }
