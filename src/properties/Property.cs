@@ -24,6 +24,23 @@
 				public const string TRANSFORM = "transform";
 
 				#endregion TRANSFORM
+
+				#region FOLLOW_VIEWPORT
+
+				public const string FOLLOW_VIEWPORT_ENABLE = "follow_viewport_enable";
+				public const string FOLLOW_VIEWPORT_SCALE = "follow_viewport_scale";
+
+				#endregion FOLLOW_VIEWPORT
+
+				public static class ParallaxBackground
+				{
+					public const string SCROLL_OFFSET = "scroll_offset";
+					public const string SCROLL_BASE_OFFSET = "scroll_base_offset";
+					public const string SCROLL_BASE_SCALE = "scroll_base_scale";
+					public const string SCROLL_LIMIT_BEGIN = "scroll_limit_begin";
+					public const string SCROLL_LIMIT_END = "scroll_limit_end";
+					public const string SCROLL_IGNORE_CAMERA_ZOOM = "scroll_ignore_camera_zoom";
+				}
 			}
 
 			public static class HTTPRequest
