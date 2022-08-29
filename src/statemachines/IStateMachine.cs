@@ -1,4 +1,4 @@
-﻿namespace Com.Surbon.GDUtils.Game
+﻿namespace Com.Surbon.GDUtils.StateMachines
 {
 	public interface IStateMachine
 	{

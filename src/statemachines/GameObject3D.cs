@@ -1,7 +1,7 @@
 ﻿using Godot;
 using System;
 
-namespace Com.Surbon.GDUtils.Game
+namespace Com.Surbon.GDUtils.StateMachines
 {
 	public class GameObject3D : Spatial, IStateMachine
 	{
