@@ -12,6 +12,13 @@ namespace Com.Surbon.GDUtils.Properties
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class Tween
+			{
+				public const string REPEAT = "repeat";
+				public const string PLAYBACK_PROCESS_MODE = "playback_process_mode";
+				public const string PLAYBACK_SPEED = "playback_speed";
+			}
+
 			public static class Viewport
 			{
 				public const string ARVR = "arvr";
