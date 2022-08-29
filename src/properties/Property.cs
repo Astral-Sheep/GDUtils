@@ -8,6 +8,18 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class AudioStreamPlayer
+			{
+				public const string STREAM = "stream";
+				public const string VOLUME_DB = "volume_db";
+				public const string PITCH_SCALE = "pitch_scale";
+				public const string PLAYING = "playing";
+				public const string AUTOPLAY = "autoplay";
+				public const string STREAM_PAUSED = "stream_paused";
+				public const string MIX_TARGET = "mix_target";
+				public const string BUS = "bus";
+			}
+
 			public static class CanvasLayer
 			{
 				#region LAYER
