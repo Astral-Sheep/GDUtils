@@ -8,6 +8,16 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class HTTPRequest
+			{
+				public const string DOWNLOAD_FILE = "download_file";
+				public const string DOWNLOAD_CHUNK_SIZE = "download_chunk_size";
+				public const string USE_THREADS = "use_threads";
+				public const string BODY_SIZE_LIMIT = "body_size_limit";
+				public const string MAX_REDIRECTS = "max_redirects";
+				public const string TIMEOUT = "timeout";
+			}
+
 			public static class SkeletonIK
 			{
 				public const string ROOT_BONE = "root_bone";
