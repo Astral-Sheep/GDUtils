@@ -8,6 +8,20 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class SkeletonIK
+			{
+				public const string ROOT_BONE = "root_bone";
+				public const string TIP_BONE = "tip_bone";
+				public const string INTERPOLATION = "interpolation";
+				public const string TARGET = "target";
+				public const string OVERRIDE_TIP_BASIS = "override_tip_basis";
+				public const string USE_MAGNET = "use_magnet";
+				public const string MAGNET = "magnet";
+				public const string TARGET_NODE = "target_node";
+				public const string MIN_DISTANCE = "min_distance";
+				public const string MAX_ITERATIONS = "max_iterations";
+			}
+
 			public static class Timer
 			{
 				public const string PROCESS_MODE = "process_mode";
