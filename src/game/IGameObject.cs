@@ -3,9 +3,9 @@
 	public interface IGameObject
 	{
 		public void Start();
-		protected void SetModeVoid();
-		protected void SetModeNormal();
-		protected void DoActionVoid(float pDelta);
-		protected void DoActionNormal(float pDelta);
+		public void SetModeVoid();
+		public void SetModeNormal();
+		public void DoActionVoid(float pDelta);
+		public void DoActionNormal(float pDelta);
 	}
 }
