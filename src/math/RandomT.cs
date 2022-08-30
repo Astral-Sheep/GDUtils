@@ -10,10 +10,9 @@ namespace Com.Surbon.GDUtils.Math
 
 		static RandomT()
 		{
+			exclusiveGenerator = new Random();
 			inclusiveGenerator = new RandomNumberGenerator();
 			inclusiveGenerator.Randomize();
-
-			exclusiveGenerator = new Random();
 		}
 
 		/// <summary>
