@@ -119,6 +119,12 @@
 
 						#endregion POPUP
 
+						public static class WindowDialog
+						{
+							public const string WINDOW_TITLE = "window_title";
+							public const string RESIZABLE = "resizable";
+						}
+
 						public static class PopupMenu
 						{
 							public const string HIDE_ON_ITEM_SELECTION = "hide_on_item_selection";
