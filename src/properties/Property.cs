@@ -27,6 +27,91 @@
 
 				#endregion MATERIAL
 
+				public static class Control
+				{
+					#region ANCHOR
+
+					public const string ANCHOR_LEFT = "anchor_left";
+					public const string ANCHOR_TOP = "anchor_top";
+					public const string ANCHOR_RIGHT = "anchor_right";
+					public const string ANCHOR_BOTTOM = "anchor_bottom";
+
+					#endregion ANCHOR
+
+					#region MARGIN
+
+					public const string MARGIN_LEFT = "margin_left";
+					public const string MARGIN_TOP = "margin_top";
+					public const string MARGIN_RIGHT = "margin_right";
+					public const string MARGIN_BOTTOM = "margin_bottom";
+
+					#endregion MARGIN
+
+					#region GROW DIRECTION
+
+					public const string GROW_HORIZONTAL = "grow_horizontal";
+					public const string GROW_VERTICAL = "grow_vertical";
+
+					#endregion GROW DIRECTION
+
+					#region RECT
+
+					public const string RECT_POSITION = "rect_position";
+					public const string RECT_SIZE = "rect_size";
+					public const string RECT_MIN_SIZE = "rect_min_size";
+					public const string RECT_ROTATION = "rect_rotation";
+					public const string RECT_SCALE = "rect_scale";
+					public const string RECT_PIVOT_OFFSET = "rect_pivot_offset";
+					public const string RECT_CLIP_CONTENT = "rect_clip_content";
+
+					#endregion RECT
+
+					#region HINT
+
+					public const string HINT_TOOLTIP = "hint_tooltip";
+
+					#endregion HINT
+
+					#region FOCUS
+
+					public const string FOCUS_NEIGHBOUR_LEFT = "focus_neighbour_left";
+					public const string FOCUS_NEIGHBOUR_TOP = "focus_neighbour_top";
+					public const string FOCUS_NEIGHBOUR_RIGHT = "focus_neighbour_right";
+					public const string FOCUS_NEIGHBOUR_BOTTOM = "focus_neighbour_bottom";
+					public const string FOCUS_NEXT = "focus_next";
+					public const string FOCUS_PREVIOUS = "focus_previous";
+					public const string FOCUS_MODE = "focus_mode";
+
+					#endregion FOCUS
+
+					#region MOUSE
+
+					public const string MOUSE_FILTER = "mouse_filter";
+					public const string MOUSE_DEFAULT_CURSOR_SHAPE = "mouse_default_cursor_shape";
+
+					#endregion MOUSE
+
+					#region INPUT
+
+					public const string INPUT_PASS_ON_MODAL_CLOSE_CLICK = "input_pass_on_modal_close_click";
+
+					#endregion INPUT
+
+					#region SIZE FLAGS
+
+					public const string SIZE_FLAGS_HORIZONTAL = "size_flags_horizontal";
+					public const string SIZE_FLAGS_VERTICAL = "size_flags_vertical";
+					public const string SIZE_FLAGS_STRETCH_RATIO = "size_flags_stretch_ratio";
+
+					#endregion SIZE FLAGS
+
+					#region THEME
+
+					public const string THEME = "theme";
+
+					#endregion THEME
+				}
+
 				public static class Node2D
 				{
 					#region TRANSFORM
