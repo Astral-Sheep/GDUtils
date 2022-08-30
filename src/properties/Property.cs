@@ -113,6 +113,21 @@
 
 					public static class Container
 					{
+						public static class ScrollContainer
+						{
+							public const string FOLLOW_FOCUS = "follow_focus";
+
+							#region SCROLL
+
+							public const string SCROLL_HORIZONTAL_ENABLED = "scroll_horizontal_enabled";
+							public const string SCROLL_HORIZONTAL = "scroll_horizontal";
+							public const string SCROLL_VERTICAL_ENABLED = "scroll_vertical_enabled";
+							public const string SCROLL_VERTICAL = "scroll_vertical";
+							public const string SCROLL_DEADZONE = "scroll_deadzone";
+
+							#endregion SCROLL
+						}
+
 						public static class TabContainer
 						{
 							public const string TAB_ALIGN = "tab_align";
