@@ -44,6 +44,12 @@
 
 					#endregion Z INDEX
 
+					public static class NavigationPolygonInstance
+					{
+						public const string NAVPOLY = "navpoly";
+						public const string ENABLED = "enabled";
+					}
+
 					public static class ParallaxLayer
 					{
 						#region MOTION
