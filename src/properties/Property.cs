@@ -111,6 +111,29 @@
 
 					#endregion THEME
 
+					public static class NinePatchRect
+					{
+						public const string TEXTURE = "texture";
+						public const string DRAW_CENTER = "draw_center";
+						public const string REGION_RECT = "region_rect";
+
+						#region PATCH MARGIN
+
+						public const string PATCH_MARGIN_LEFT = "patch_margin_left";
+						public const string PATCH_MARGIN_TOP = "patch_margin_top";
+						public const string PATCH_MARGIN_RIGHT = "patch_margin_right";
+						public const string PATCH_MARGIN_BOTTOM = "patch_margin_bottom";
+
+						#endregion PATCH MARGIN
+
+						#region AXIS STRETCH
+
+						public const string AXIS_STRETCH_HORIZONTAL = "axis_stretch_horizontal";
+						public const string AXIS_STRETCH_VERTICAL = "axis_stretch_vertical";
+
+						#endregion AXIS STRETCH
+					}
+
 					public static class ReferenceRect
 					{
 						public const string BORDER_COLOR = "border_color";
