@@ -111,6 +111,48 @@
 
 					#endregion THEME
 
+					public static class TextEdit
+					{
+						public const string TEXT = "text";
+						public const string READONLY = "readonly";
+						public const string HIGHLIGHT_CURRENT_LINE = "highlight_current_line";
+						public const string SYNTAX_HIGHLIGHTING = "syntax_highlighting";
+						public const string SHOW_LINE_NUMBERS = "show_line_numbers";
+						public const string DRAW_TABS = "draw_tabs";
+						public const string DRAW_SPACES = "draw_spaces";
+						public const string BOOKMARK_GUTTER = "bookmark_gutter";
+						public const string BREAKPOINT_GUTTER = "breakpoint_gutter";
+						public const string FOLD_GUTTER = "fold_gutter";
+						public const string HIGHLIGHT_ALL_OCCURENCES = "highlight_all_occurences";
+						public const string OVERRIDE_SELECTED_FONT_COLOR = "override_selected_font_color";
+						public const string CONTEXT_MENU_ENABLED = "context_menu_enabled";
+						public const string SHORTCUT_KEYS_ENABLED = "shortcut_keys_enabled";
+						public const string VIRTUAL_KEYBOARD_ENABLED = "virtual_keyboard_enabled";
+						public const string SELECTING_ENABLED = "selecting_enabled";
+						public const string SMOOTH_SCROLLING = "smooth_scrolling";
+						public const string V_SCROLL_SPEED = "v_scroll_speed";
+						public const string HIDING_ENABLED = "hiding_enabled";
+						public const string WRAP_ENABLED = "wrap_enabled";
+						public const string SCROLL_VERTICAL = "scroll_vertical";
+						public const string SCROLL_HORIZONTAL = "scroll_horizontal";
+
+						#region MINIMAP
+
+						public const string MINIMAP_DRAW = "minimap_draw";
+						public const string MINIMAP_WIDTH = "minimap_width";
+
+						#endregion MINIMAP
+
+						#region CARET
+
+						public const string CARET_BLOCK_MODE = "caret_block_mode";
+						public const string CARET_BLINK = "caret_blink";
+						public const string CARET_BLINK_SPEED = "caret_blink_speed";
+						public const string CARET_MOVING_BY_RIGHT_CLICK = "caret_moving_by_right_click";
+
+						#endregion CARET
+					}
+
 					public static class TextureRect
 					{
 						public const string TEXTURE = "texture";
