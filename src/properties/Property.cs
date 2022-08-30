@@ -123,6 +123,14 @@
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
 
+						public static class SpinBox
+						{
+							public const string ALIGN = "align";
+							public const string EDITABLE = "editable";
+							public const string PREFIX = "prefix";
+							public const string SUFFIX = "suffix";
+						}
+
 						public static class TextureProgress
 						{
 							public const string FILL_MODE = "fill_mode";
