@@ -44,6 +44,13 @@
 
 					#endregion Z INDEX
 
+					public static class MeshInstance2D
+					{
+						public const string MESH = "mesh";
+						public const string TEXTURE = "texture";
+						public const string NORMAL_MAP = "normal_map";
+					}
+
 					public static class MultiMeshInstance2D
 					{
 						public const string MULTIMESH = "multimesh";
