@@ -44,6 +44,12 @@
 
 					#endregion Z INDEX
 
+					public static class Bone2D
+					{
+						public const string REST = "rest";
+						public const string DEFAULT_LENGTH = "default_length";
+					}
+
 					public static class CPUParticles2D
 					{
 						public const string EMITTING = "emitting";
