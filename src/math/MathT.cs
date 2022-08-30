@@ -111,11 +111,46 @@ namespace Com.Surbon.GDUtils.Math
 	public static class VectorT
 	{
 		/// <summary>
-		/// Linearly interpolates two vectors by the given weight.
+		/// Linearly interpolates two vectors by a normalized random value.
+		/// </summary>
+		public static Vector2 LerpRand(Vector2 from, Vector2 to)
+		{
+			float lRandom = new RandomNumberGenerator().Randf();
+
+			return LerpUnclamped(from, to, lRandom);
+		}
+
+		/// <summary>
+		/// Linearly interpolates two vectors by a normalized random value.
+		/// </summary>
+		public static Vector3 LerpRand(Vector3 from, Vector3 to)
+		{
+			float lRandom = new RandomNumberGenerator().Randf();
+
+			return LerpUnclamped(from, to, lRandom);
+		}
+
+		/// <summary>
+		/// Linearly interpolates two vectors by the given value.
 		/// </summary>
 		public static Vector2 LerpUnclamped(Vector2 from, Vector2 to, float weight)
 		{
-			return new Vector2(MathT.LerpUnclamped(from.x, to.x, weight), MathT.LerpUnclamped(from.y, to.y, weight));
+			return new Vector2(
+				MathT.LerpUnclamped(from.x, to.x, weight),
+				MathT.LerpUnclamped(from.y, to.y, weight)
+				);
+		}
+
+		/// <summary>
+		/// Linearly interpolates two vectors by the given value.
+		/// </summary>
+		public static Vector3 LerpUnclamped(Vector3 from, Vector3 to, float weight)
+		{
+			return new Vector3(
+				MathT.LerpUnclamped(from.x, to.x, weight),
+				MathT.LerpUnclamped(from.y, to.y, weight),
+				MathT.LerpUnclamped(from.z, to.z, weight)
+				);
 		}
 	}
 }
