@@ -44,6 +44,11 @@
 
 					#endregion Z INDEX
 
+					public static class Position2D
+					{
+						public const string GIZMO_EXTENTS = "gizmo_extents";
+					}
+
 					public static class RayCast2D
 					{
 						public const string ENABLED = "enabled";
