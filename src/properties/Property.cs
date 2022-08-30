@@ -44,6 +44,12 @@
 
 					#endregion Z INDEX
 
+					public static class LightOccluder2D
+					{
+						public const string OCCLUDER = "occluder";
+						public const string LIGHT_MASK = "light_mask";
+					}
+
 					public static class Line2D
 					{
 						public const string POINTS = "points";
