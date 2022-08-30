@@ -44,6 +44,22 @@
 
 					#endregion Z INDEX
 
+					public static class CollisionObject2D
+					{
+						#region COLLISION
+
+						public const string COLLISION_LAYER = "collision_layer";
+						public const string COLLISION_MASK = "collision_mask";
+
+						#endregion COLLISION
+
+						#region INPUT
+
+						public const string INPUT_PICKABLE = "input_pickable";
+
+						#endregion INPUT
+					}
+
 					public static class AudioStreamPlayer2D
 					{
 						public const string STREAM = "stream";
