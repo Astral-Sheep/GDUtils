@@ -44,6 +44,12 @@
 
 					#endregion Z INDEX
 
+					public static class BackBufferCopy
+					{
+						public const string COPY_MODE = "copy_mode";
+						public const string RECT = "rect";
+					}
+
 					public static class Bone2D
 					{
 						public const string REST = "rest";
