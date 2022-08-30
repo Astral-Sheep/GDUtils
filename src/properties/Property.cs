@@ -44,6 +44,59 @@
 
 					#endregion Z INDEX
 
+					public static class Camera2D
+					{
+						public const string OFFSET = "offset";
+						public const string ANCHOR_MODE = "anchor_mode";
+						public const string ROTATING = "rotating";
+						public const string CURRENT = "current";
+						public const string ZOOM = "zoom";
+						public const string PROCESS_MODE = "process_mode";
+						public const string DRAG_MARGIN_H_ENABLED = "drag_margin_h_enabled";
+						public const string DRAG_MARGIN_V_ENABLED = "drag_margin_v_enabled";
+
+						#region LIMIT
+
+						public const string LIMIT_LEFT = "limit_left";
+						public const string LIMIT_TOP = "limit_top";
+						public const string LIMIT_RIGHT = "limit_right";
+						public const string LIMIT_BOTTOM = "limit_bottom";
+						public const string LIMIT_SMOOTHED = "limit_smoothed";
+
+						#endregion LIMIT
+
+						#region SMOOTHING
+
+						public const string SMOOTHING_ENABLED = "smoothing_enabled";
+						public const string SMOOTHING_SPEED = "smoothing_speed";
+
+						#endregion SMOOTHING
+
+						#region OFFSET
+
+						public const string OFFSET_H = "offset_h";
+						public const string OFFSET_V = "offset_v";
+
+						#endregion OFFSET
+
+						#region DRAG_MARGIN
+
+						public const string DRAG_MARGIN_LEFT = "drag_margin_left";
+						public const string DRAG_MARGIN_TOP = "drag_margin_top";
+						public const string DRAG_MARGIN_RIGHT = "drag_margin_right";
+						public const string DRAG_MARGIN_BOTTOM = "drag_margin_bottom";
+
+						#endregion DRAG_MARGIN
+
+						#region EDITOR
+
+						public const string EDITOR_DRAW_SCREEN = "editor_draw_screen";
+						public const string EDITOR_DRAW_LIMITS = "editor_draw_limits";
+						public const string EDITOR_DRAW_DRAG_MARGIN = "editor_draw_drag_margin";
+
+						#endregion EDITOR
+					}
+
 					public static class CanvasModulate
 					{
 						public const string COLOR = "color";
