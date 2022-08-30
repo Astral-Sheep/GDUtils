@@ -58,6 +58,32 @@
 						public const string INPUT_PICKABLE = "input_pickable";
 
 						#endregion INPUT
+
+						public static class Area2D
+						{
+							public const string MONITORING = "monitoring";
+							public const string MONITORABLE = "monitorable";
+							public const string PRIORITY = "priority";
+
+							#region PHYSICS OVERRIDES
+
+							public const string SPACE_OVERRIDE = "space_override";
+							public const string GRAVITY_POINT = "gravity_point";
+							public const string GRAVITY_DISTANCE_SCALE = "gravity_distance_scale";
+							public const string GRAVITY_VEC = "gravity_vec";
+							public const string GRAVITY = "gravity";
+							public const string LINEAR_DAMP = "linear_damp";
+							public const string ANGULAR_DAMP = "angular_damp";
+
+							#endregion PHYSICS OVERRIDES
+
+							#region AUDIO BUS
+
+							public const string AUDIO_BUS_OVERRIDE = "audio_bus_override";
+							public const string AUDIO_BUS_NAME = "audio_bus_name";
+
+							#endregion AUDIO BUS
+						}
 					}
 
 					public static class AudioStreamPlayer2D
