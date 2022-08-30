@@ -111,6 +111,16 @@
 
 					#endregion THEME
 
+					public static class Tree
+					{
+						public const string COLUMNS = "columns";
+						public const string ALLOW_RESELECT = "allow_reselect";
+						public const string ALLOW_RMB_SELECT = "allow_rmb_select";
+						public const string HIDE_FOLDING = "hide_folding";
+						public const string HIDE_ROOT = "hide_root";
+						public const string DROP_MODE_FLAGS = "drop_mode_flags";
+					}
+
 					public static class VideoPlayer
 					{
 						public const string AUDIO_TRACK = "audio_track";
