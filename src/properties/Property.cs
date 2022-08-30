@@ -44,6 +44,41 @@
 
 					#endregion Z INDEX
 
+					public static class Light2D
+					{
+						public const string ENABLED = "enabled";
+						public const string EDITOR_ONLY = "editor_only";
+						public const string TEXTURE = "texture";
+						public const string OFFSET = "offset";
+						public const string TEXTURE_SCALE = "texture_scale";
+						public const string COLOR = "color";
+						public const string ENERGY = "energy";
+						public const string MODE = "mode";
+
+						#region RANGE
+
+						public const string RANGE_HEIGHT = "range_height";
+						public const string RANGE_Z_MIN = "range_z_min";
+						public const string RANGE_Z_MAX = "range_z_max";
+						public const string RANGE_LAYER_MIN = "range_layer_min";
+						public const string RANGE_LAYER_MAX = "range_layer_max";
+						public const string RANGE_ITEM_CULL_MASK = "range_item_cull_mask";
+
+						#endregion RANGE
+
+						#region SHADOW
+
+						public const string SHADOW_ENABLED = "shadow_enabled";
+						public const string SHADOW_COLOR = "shadow_color";
+						public const string SHADOW_BUFFER_SIZE = "shadow_buffer_size";
+						public const string SHADOW_GRADIENT_LENGTH = "shadow_gradient_length";
+						public const string SHADOW_FILTER = "shadow_filter";
+						public const string SHADOW_FILTER_SMOOTH = "shadow_filter_smooth";
+						public const string SHADOW_ITEM_CULL_MASK = "shadow_item_cull_mask";
+
+						#endregion SHADOW
+					}
+
 					public static class LightOccluder2D
 					{
 						public const string OCCLUDER = "occluder";
