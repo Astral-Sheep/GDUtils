@@ -123,6 +123,14 @@
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
 
+						public static class Slider
+						{
+							public const string EDITABLE = "editable";
+							public const string SCROLLABLE = "scrollable";
+							public const string TICK_COUNT = "tick_count";
+							public const string TICK_ON_BORDERS = "tick_on_borders";
+						}
+
 						public static class ProgressBar
 						{
 							#region PERCENT
