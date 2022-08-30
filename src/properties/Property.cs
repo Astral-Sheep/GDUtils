@@ -123,6 +123,17 @@
 						{
 							public const string WINDOW_TITLE = "window_title";
 							public const string RESIZABLE = "resizable";
+
+							public static class AcceptDialog
+							{
+								#region DIALOG
+
+								public const string DIALOG_TEXT = "dialog_text";
+								public const string DIALOG_HIDE_ON_OK = "dialog_hide_on_ok";
+								public const string DIALOG_AUTOWRAP = "dialog_autowrap";
+
+								#endregion DIALOG
+							}
 						}
 
 						public static class PopupMenu
