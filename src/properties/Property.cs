@@ -111,6 +111,15 @@
 
 					#endregion THEME
 
+					public static class Tabs
+					{
+						public const string CURRENT_TAB = "current_tab";
+						public const string TAB_ALIGN = "tab_align";
+						public const string TAB_CLOSE_DISPLAY_POLICY = "tab_close_display_policy";
+						public const string SCROLLING_ENABLED = "scrolling_enabled";
+						public const string DRAG_TO_REARRANGE_ENABLED = "drag_to_rearrange_enabled";
+					}
+
 					public static class TextEdit
 					{
 						public const string TEXT = "text";
