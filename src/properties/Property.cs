@@ -44,6 +44,38 @@
 
 					#endregion Z INDEX
 
+					public static class Line2D
+					{
+						public const string POINTS = "points";
+						public const string WIDTH = "width";
+						public const string WIDTH_CURVE = "width_curve";
+						public const string DEFAULT_COLOR = "default_color";
+
+						#region FILL
+
+						public const string GRADIENT = "gradient";
+						public const string TEXTURE = "texture";
+						public const string TEXTURE_MODE = "texture_mode";
+
+						#endregion FILL
+
+						#region CAPPING
+
+						public const string JOINT_MODE = "joint_mode";
+						public const string BEGIN_CAP_MODE = "begin_cap_mode";
+						public const string END_CAP_MODE = "end_cap_mode";
+
+						#endregion CAPPING
+
+						#region BORDER
+
+						public const string SHARP_LIMIT = "sharp_limit";
+						public const string ROUND_PRECISION = "round_precision";
+						public const string ANTIALIASED = "antialiased";
+
+						#endregion BORDER
+					}
+
 					public static class Listener2D
 					{
 						public const string CURRENT = "current";
