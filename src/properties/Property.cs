@@ -122,6 +122,41 @@
 						public const string ROUNDED = "rounded";
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
+
+						public static class TextureProgress
+						{
+							public const string FILL_MODE = "fill_mode";
+							public const string NINE_PATCH_STRETCH = "nine_patch_stretch";
+							public const string STRETCH_MARGIN_LEFT = "stretch_margin_left";
+							public const string STRETCH_MARGIN_TOP = "stretch_margin_top";
+							public const string STRETCH_MARGIN_RIGHT = "stretch_margin_right";
+							public const string STRETCH_MARGIN_BOTTOM = "stretch_margin_bottom";
+
+							#region TEXTURES
+
+							public const string TEXTURE_UNDER = "texture_under";
+							public const string TEXTURE_OVER = "texture_over";
+							public const string TEXTURE_PROGRESS = "texture_progress";
+							public const string TEXTURE_PROGRESS_OFFSET = "texture_progress_offset";
+
+							#endregion TEXTURES
+
+							#region TINT
+
+							public const string TINT_UNDER = "tint_under";
+							public const string TINT_OVER = "tint_over";
+							public const string TINT_PROGRESS = "tint_progress";
+
+							#endregion TINT
+
+							#region RADIAL FILL
+
+							public const string RADIAL_INITIAL_ANGLE = "radial_initial_angle";
+							public const string RADIAL_FILL_DEGREES = "radial_fill_degrees";
+							public const string RADIAL_CENTER_OFFSET = "radial_center_offset";
+
+							#endregion RADIAL FILL
+						}
 					}
 
 					public static class ItemList
