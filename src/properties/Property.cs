@@ -116,6 +116,17 @@
 						public static class BoxContainer
 						{
 							public const string ALIGNMENT = "alignment";
+
+							public static class ColorPicker
+							{
+								public const string COLOR = "color";
+								public const string EDIT_ALPHA = "edit_alpha";
+								public const string HSV_MODE = "hsv_mode";
+								public const string RAW_MODE = "raw_mode";
+								public const string DEFFERED_MODE = "deffered_mode";
+								public const string PRESETS_ENABLED = "presets_enabled";
+								public const string PRESETS_VISIBLE = "presets_visible";
+							}
 						}
 
 						public static class GraphNode
