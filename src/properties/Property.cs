@@ -133,6 +133,12 @@
 							public const string ALIGN = "align";
 							public const string EXPAND_ICON = "expand_icon";
 
+							public static class ColorPickerButton
+							{
+								public const string COLOR = "color";
+								public const string EDIT_ALPHA = "edit_alpha";
+							}
+
 							public static class MenuButton
 							{
 								public const string SWITCH_ON_HOVER = "switch_on_hover";
