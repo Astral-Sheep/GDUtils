@@ -64,6 +64,11 @@
 							public const string LENGTH = "length";
 							public const string INITIAL_OFFSET = "initial_offset";
 						}
+
+						public static class PinJoint2D
+						{
+							public const string SOFTNESS = "softness";
+						}
 					}
 
 					public static class Light2D
