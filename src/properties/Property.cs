@@ -44,6 +44,18 @@
 
 					#endregion Z INDEX
 
+					public static class PathFollow2D
+					{
+						public const string OFFSET = "offset";
+						public const string UNIT_OFFSET = "unit_offset";
+						public const string H_OFFSET = "h_offset";
+						public const string V_OFFSET = "v_offset";
+						public const string ROTATE = "rotate";
+						public const string CUBIC_INTERP = "cubic_interp";
+						public const string LOOP = "loop";
+						public const string LOOKAHEAD = "lookahead";
+					}
+
 					public static class Polygon2D
 					{
 						public const string COLOR = "color";
