@@ -44,6 +44,44 @@
 
 					#endregion Z INDEX
 
+					public static class TileMap
+					{
+						public const string MODE = "mode";
+						public const string TILE_SET = "tile_set";
+						public const string SHOW_COLLISION = "show_collision";
+						public const string COMPATIBILITY_MODE = "compatibility_mode";
+						public const string CENTERED_TEXTURES = "centered_textures";
+						public const string CELL_CLIP_UV = "cell_clip_uv";
+
+						#region CELL
+
+						public const string CELL_SIZE = "cell_size";
+						public const string CELL_QUADRANT_SIZE = "cell_quadrant_size";
+						public const string CELL_CUSTOM_TRANSFORM = "cell_custom_transform";
+						public const string CELL_HALF_OFFSET = "cell_half_offset";
+						public const string CELL_TILE_ORIGIN = "cell_tile_origin";
+						public const string CELL_Y_SORT = "cell_y_sort";
+
+						#endregion CELL
+
+						#region COLLISION
+
+						public const string COLLISION_USE_PARENT = "collision_use_parent";
+						public const string COLLISION_USE_KINEMATIC = "collision_use_kinematic";
+						public const string COLLISION_FRICTION = "collision_friction";
+						public const string COLLISION_BOUNCE = "collision_bounce";
+						public const string COLLISION_LAYER = "collision_layer";
+						public const string COLLISION_MASK = "collision_mask";
+
+						#endregion COLLISION
+
+						#region OCCLUDER
+
+						public const string OCCLUDER_LIGHT_MASK = "occluder_light_mask";
+
+						#endregion OCCLUDER
+					}
+
 					public static class TouchScreenButton
 					{
 						public const string NORMAL = "normal";
