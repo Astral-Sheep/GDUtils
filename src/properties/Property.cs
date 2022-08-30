@@ -111,6 +111,15 @@
 
 					#endregion THEME
 
+					public static class Container
+					{
+						public static class ViewportContainer
+						{
+							public const string STRETCH = "stretch";
+							public const string STRETCH_SHRINK = "stretch_shrink";
+						}
+					}
+
 					public static class BaseButton
 					{
 						public const string DISABLED = "disabled";
