@@ -174,6 +174,14 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
+		/// Returns the slope of the line passing by from and to.
+		/// </summary>
+		public static float GetSlope(Vector2 from, Vector2 to)
+		{
+			return (to.y - from.y) / (to.x - from.x);
+		}
+
+		/// <summary>
 		/// Linearly interpolates to vectors by a normalized value.
 		/// </summary>
 		public static Vector2 Lerp(Vector2 from, Vector2 to, float weight)
