@@ -44,6 +44,11 @@
 
 					#endregion Z INDEX
 
+					public static class CanvasModulate
+					{
+						public const string COLOR = "color";
+					}
+
 					public static class CollisionPolygon2D
 					{
 						public const string BUILD_MODE = "build_mode";
