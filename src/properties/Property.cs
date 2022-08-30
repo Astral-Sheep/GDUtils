@@ -111,6 +111,15 @@
 
 					#endregion THEME
 
+					public static class TextureRect
+					{
+						public const string TEXTURE = "texture";
+						public const string EXPAND = "expand";
+						public const string STRETCH_MODE = "stretch_mode";
+						public const string FLIP_H = "flip_h";
+						public const string FLIP_V = "flip_v";
+					}
+
 					public static class Tree
 					{
 						public const string COLUMNS = "columns";
