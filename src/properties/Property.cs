@@ -111,6 +111,31 @@
 
 					#endregion THEME
 
+					public static class ItemList
+					{
+						public const string SELECT_MODE = "select_mode";
+						public const string ALLOW_RESELECT = "allow_reselect";
+						public const string ALLOW_RMB_SELECT = "allow_rmb_select";
+						public const string MAX_TEXT_LINES = "max_text_lines";
+						public const string AUTO_HEIGHT = "auto_height";
+
+						#region COLUMNS
+
+						public const string MAX_COLUMNS = "max_columns";
+						public const string SAME_COLUMN_WIDTH = "same_column_width";
+						public const string FIXED_COLUMN_WIDTH = "fixed_column_width";
+
+						#endregion COLUMNS
+
+						#region ICON
+
+						public const string ICON_MODE = "icon_mode";
+						public const string ICON_SCALE = "icon_scale";
+						public const string FIXED_ICON_SIZE = "fixed_icon_size";
+
+						#endregion ICON
+					}
+
 					public static class Label
 					{
 						public const string TEXT = "text";
