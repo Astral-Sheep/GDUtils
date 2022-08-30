@@ -44,6 +44,17 @@
 
 					#endregion Z INDEX
 
+					public static class ParallaxLayer
+					{
+						#region MOTION
+
+						public const string MOTION_SCALE = "motion_scale";
+						public const string MOTION_OFFSET = "motion_offset";
+						public const string MOTION_MIRRORING = "motion_mirroring";
+
+						#endregion MOTION
+					}
+
 					public static class Particles2D
 					{
 						public const string EMITTING = "emitting";
