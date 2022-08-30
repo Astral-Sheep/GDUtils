@@ -132,6 +132,11 @@
 							public const string CLIP_TEXT = "clip_text";
 							public const string ALIGN = "align";
 							public const string EXPAND_ICON = "expand_icon";
+
+							public static class OptionButton
+							{
+								public const string SELECTED = "selected";
+							}
 						}
 
 						public static class LinkButton
