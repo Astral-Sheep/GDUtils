@@ -31,6 +31,25 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
+		/// Returns the polar coordinates of the vector given in cartesian coordinates
+		/// </summary>
+		/// <param name="vector">Cartesian coordinates as (x, y)</param>
+		/// <returns>Polar coordinates as (r, th)</returns>
+		public static Vector2 CartesianToPolar(Vector2 vector)
+		{
+			return Mathf.Cartesian2Polar(vector.x, vector.y);
+		}
+
+		/// <summary>
+		/// Returns the polar coordinates of the vector given in cartesian coordinates
+		/// </summary>
+		/// <returns>Polar coordinates as (r, th)</returns>
+		public static Vector2 CartesianToPolar(float x, float y)
+		{
+			return Mathf.Cartesian2Polar(x, y);
+		}
+
+		/// <summary>
 		/// Returns the spheric coordinates of the vector from the cartesian coordinates
 		/// </summary>
 		/// <param name="vector">Cartesian coordinates as (x, y, z)</param>
@@ -257,6 +276,27 @@ namespace Com.Surbon.GDUtils.Math
 		public static Vector3 Normalize(Vector3 vector, float length = 1)
 		{
 			return vector.Normalized() * length;
+		}
+
+		/// <summary>
+		/// Returns the cartesian coordinates of the vector given in polar coordinates
+		/// </summary>
+		/// <param name="vector">Polar coordinates as (r, th)</param>
+		/// <returns>Cartesian coordinates as (x, y)</returns>
+		public static Vector2 PolarToCartesian(Vector2 vector)
+		{
+			return Mathf.Polar2Cartesian(vector.x, vector.y);
+		}
+
+		/// <summary>
+		/// Returns the cartesian coordinates of the vector given in polar coordinates
+		/// </summary>
+		/// <param name="r">Radius</param>
+		/// <param name="th">Angle</param>
+		/// <returns>Cartesian coordinates as (x, y)</returns>
+		public static Vector2 PolarToCartesian(float r, float th)
+		{
+			return Mathf.Polar2Cartesian(r, th);
 		}
 
 		/// <summary>
