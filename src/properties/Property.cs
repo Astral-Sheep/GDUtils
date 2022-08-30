@@ -111,6 +111,13 @@
 
 					#endregion THEME
 
+					public static class ReferenceRect
+					{
+						public const string BORDER_COLOR = "border_color";
+						public const string BORDER_WIDTH = "border_width";
+						public const string EDITOR_ONLY = "editor_only";
+					}
+
 					public static class RichTextLabel
 					{
 						public const string VISIBLE_CHARACTERS = "visible_characters";
