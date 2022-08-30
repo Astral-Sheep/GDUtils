@@ -123,6 +123,11 @@
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
 
+						public static class ScrollBar
+						{
+							public const string CUSTOM_STEP = "custom_step";
+						}
+
 						public static class Slider
 						{
 							public const string EDITABLE = "editable";
