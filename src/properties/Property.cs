@@ -44,6 +44,19 @@
 
 					#endregion Z INDEX
 
+					public static class TouchScreenButton
+					{
+						public const string NORMAL = "normal";
+						public const string PRESSED = "pressed";
+						public const string BITMASK = "bitmask";
+						public const string SHAPE = "shape";
+						public const string SHAPE_CENTERED = "shape_centered";
+						public const string SHAPE_VISIBLE = "shape_visible";
+						public const string PASSBY_PRESS = "passby_press";
+						public const string ACTION = "action";
+						public const string VISIBILITY_MODE = "visibility_mode";
+					}
+
 					public static class VisibilityNotifier2D
 					{
 						public const string RECT = "rect";
