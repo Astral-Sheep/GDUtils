@@ -44,6 +44,11 @@
 
 					#endregion Z INDEX
 
+					public static class Path2D
+					{
+						public const string CURVE = "curve";
+					}
+
 					public static class PathFollow2D
 					{
 						public const string OFFSET = "offset";
