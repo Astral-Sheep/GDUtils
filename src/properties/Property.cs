@@ -111,6 +111,19 @@
 
 					#endregion THEME
 
+					public static class Range
+					{
+						public const string MIN_VALUE = "min_value";
+						public const string MAX_VALUE = "max_value";
+						public const string STEP = "step";
+						public const string PAGE = "page";
+						public const string VALUE = "value";
+						public const string EXP_EDIT = "exp_edit";
+						public const string ROUNDED = "rounded";
+						public const string ALLOW_GREATER = "allow_greater";
+						public const string ALLOW_LESSER = "allow_lesser";
+					}
+
 					public static class ItemList
 					{
 						public const string SELECT_MODE = "select_mode";
