@@ -100,6 +100,42 @@
 							#endregion MOTION
 						}
 
+						public static class RigidBody2D
+						{
+							public const string MODE = "mode";
+							public const string MASS = "mass";
+							public const string WEIGHT = "weight";
+							public const string PHYSICS_MATERIAL_OVERRIDE = "physics_material_override";
+							public const string GRAVITY_SCALE = "gravity_scale";
+							public const string CUSTOM_INTEGRATOR = "custom_integrator";
+							public const string CONTINUOUS_CD = "continuous_cd";
+							public const string CONTACTS_REPORTED = "contacts_reported";
+							public const string CONTACT_MONITOR = "contact_monitor";
+							public const string SLEEPING = "sleeping";
+							public const string CAN_SLEEP = "can_sleep";
+
+							#region LINEAR
+
+							public const string LINEAR_VELOCITY = "linear_velocity";
+							public const string LINEAR_DAMP = "linear_damp";
+
+							#endregion LINEAR
+
+							#region ANGULAR
+
+							public const string ANGULAR_VELOCITY = "angular_velocity";
+							public const string ANGULAR_DAMP = "angular_damp";
+
+							#endregion ANGULAR
+
+							#region APPLIED FORCES
+
+							public const string APPLIED_FORCE = "applied_force";
+							public const string APPLIED_TORQUE = "applied_torque";
+
+							#endregion APPLIED FORCES
+						}
+
 						public static class StaticBody2D
 						{
 							public const string CONSTANT_LINEAR_VELOCITY = "constant_linear_velocity";
