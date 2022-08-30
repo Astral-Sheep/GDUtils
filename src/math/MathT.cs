@@ -108,7 +108,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 	}
 
-	public static class Vector2T
+	public static class VectorT
 	{
 		/// <summary>
 		/// Linearly interpolates two vectors by the given weight.
