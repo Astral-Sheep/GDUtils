@@ -44,6 +44,13 @@
 
 					#endregion Z INDEX
 
+					public static class MultiMeshInstance2D
+					{
+						public const string MULTIMESH = "multimesh";
+						public const string TEXTURE = "texture";
+						public const string NORMAL_MAP = "normal_map";
+					}
+
 					public static class NavigationPolygonInstance
 					{
 						public const string NAVPOLY = "navpoly";
