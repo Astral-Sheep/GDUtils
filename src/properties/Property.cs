@@ -50,6 +50,14 @@
 						public const string NODE_B = "node_b";
 						public const string BIAS = "bias";
 						public const string DISABLE_COLLISION = "disable_collision";
+
+						public static class DampedSpringJoint2D
+						{
+							public const string LENGTH = "length";
+							public const string REST_LENGTH = "rest_length";
+							public const string STIFFNESS = "stiffness";
+							public const string DAMPING = "damping";
+						}
 					}
 
 					public static class Light2D
