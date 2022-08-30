@@ -111,6 +111,15 @@
 
 					#endregion THEME
 
+					public static class Popup
+					{
+						#region POPUP
+
+						public const string POPUP_EXCLUSIVE = "popup_exclusive";
+
+						#endregion POPUP
+					}
+
 					public static class Container
 					{
 						public static class AspectRatioContainer
