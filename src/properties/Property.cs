@@ -44,6 +44,20 @@
 
 					#endregion Z INDEX
 
+					public static class AudioStreamPlayer2D
+					{
+						public const string STREAM = "stream";
+						public const string VOLUME_DB = "volume_db";
+						public const string PITCH_SCALE = "pitch_scale";
+						public const string PLAYING = "playing";
+						public const string AUTOPLAY = "autoplay";
+						public const string STREAM_PAUSED = "stream_paused";
+						public const string MAX_DISTANCE = "max_distance";
+						public const string ATTENUATION = "attenuation";
+						public const string BUS = "bus";
+						public const string AREA_MASK = "area_mask";
+					}
+
 					public static class BackBufferCopy
 					{
 						public const string COPY_MODE = "copy_mode";
