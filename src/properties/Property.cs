@@ -111,6 +111,20 @@
 
 					#endregion THEME
 
+					public static class BaseButton
+					{
+						public const string DISABLED = "disabled";
+						public const string TOGGLE_MODE = "toggle_mode";
+						public const string SHORTCUT_IN_TOOLTIP = "shortcut_in_tooltip";
+						public const string PRESSED = "pressed";
+						public const string ACTION_MODE = "action_mode";
+						public const string BUTTON_MASK = "button_mask";
+						public const string ENABLED_FOCUS_MODE = "enabled_focus_mode";
+						public const string KEEP_PRESSED_OUTSIDE = "keep_pressed_outside";
+						public const string SHORTCUT = "shortcut";
+						public const string GROUP = "group";
+					}
+
 					public static class ColorRect
 					{
 						public const string COLOR = "color";
