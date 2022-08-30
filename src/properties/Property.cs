@@ -110,6 +110,18 @@
 					public const string THEME = "theme";
 
 					#endregion THEME
+
+					public static class VideoPlayer
+					{
+						public const string AUDIO_TRACK = "audio_track";
+						public const string STREAM = "stream";
+						public const string VOLUME_DB = "volume_db";
+						public const string AUTOPLAY = "autoplay";
+						public const string PAUSED = "paused";
+						public const string EXPAND = "expand";
+						public const string BUFFERING_MSEC = "buffering_msec";
+						public const string BUS = "bus";
+					}
 				}
 
 				public static class Node2D
