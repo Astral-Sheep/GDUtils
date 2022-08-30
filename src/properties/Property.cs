@@ -123,6 +123,15 @@
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
 
+						public static class ProgressBar
+						{
+							#region PERCENT
+
+							public const string PERCENT_VISIBLE = "percent_visible";
+
+							#endregion PERCENT
+						}
+
 						public static class SpinBox
 						{
 							public const string ALIGN = "align";
