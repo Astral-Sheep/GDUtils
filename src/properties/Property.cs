@@ -111,6 +111,11 @@
 
 					#endregion THEME
 
+					public static class ColorRect
+					{
+						public const string COLOR = "color";
+					}
+
 					public static class GraphEdit
 					{
 						public const string RIGHT_DISCONNECTS = "right_disconnects";
