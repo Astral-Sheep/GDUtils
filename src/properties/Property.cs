@@ -111,6 +111,20 @@
 
 					#endregion THEME
 
+					public static class Label
+					{
+						public const string TEXT = "text";
+						public const string ALIGN = "align";
+						public const string VALIGN = "valign";
+						public const string AUTOWRAP = "autowrap";
+						public const string CLIP_TEXT = "clip_text";
+						public const string UPPERCASE = "uppercase";
+						public const string VISIBLE_CHARACTERS = "visible_characters";
+						public const string PERCENT_VISIBLE = "percent_visible";
+						public const string LINES_SKIPPED = "lines_skipped";
+						public const string MAX_LINES_VISIBLE = "max_lines_visible";
+					}
+
 					public static class LineEdit
 					{
 						public const string TEXT = "text";
