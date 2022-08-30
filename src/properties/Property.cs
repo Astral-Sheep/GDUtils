@@ -44,6 +44,157 @@
 
 					#endregion Z INDEX
 
+					public static class CPUParticles2D
+					{
+						public const string EMITTING = "emitting";
+						public const string AMOUNT = "amount";
+
+						#region TIME
+
+						public const string LIFETIME = "lifetime";
+						public const string ONE_SHOT = "one_shot";
+						public const string PREPROCESS = "preprocess";
+						public const string SPEED_SCALE = "speed_scale";
+						public const string EXPLOSIVENESS = "explosiveness";
+						public const string RANDOMNESS = "randomness";
+						public const string LIFETIME_RANDOMNESS = "lifetime_randomness";
+						public const string FIXED_FPS = "fixed_fps";
+						public const string FRACT_DELTA = "fract_delta";
+
+						#endregion TIME
+
+						#region DRAWING
+
+						public const string LOCAL_COORDS = "local_coords";
+						public const string DRAW_ORDER = "draw_order";
+						public const string TEXTURE = "texture";
+						public const string NORMALMAP = "normalmap";
+
+						#endregion DRAWING
+
+						#region EMISSION SHAPE
+
+						public const string EMISSION_SHAPE = "emission_shape";
+
+						#endregion EMISSION SHAPE
+
+						#region FLAGS
+
+						public const string FLAG_ALIGN_Y = "flag_align_y";
+
+						#endregion FLAGS
+
+						#region DIRECTION
+
+						public const string DIRECTION = "direction";
+						public const string SPREAD = "spread";
+
+						#endregion DIRECTION
+
+						#region GRAVITY
+
+						public const string GRAVITY = "gravity";
+
+						#endregion GRAVITY
+
+						#region INITIAL VELOCITY
+
+						public const string INITIAL_VELOCITY = "initial_velocity";
+						public const string INITIAL_VELOCITY_RANDOM = "initial_velocity_random";
+
+						#endregion INITIAL VELOCITY
+
+						#region ANGULAR VELOCITY
+
+						public const string ANGULAR_VELOCITY = "angular_velocity";
+						public const string ANGULAR_VELOCITY_RANDOM = "angular_velocity_random";
+						public const string ANGULAR_VELOCITY_CURVE = "angular_velocity_curve";
+
+						#endregion ANGULAR VELOCITY
+
+						#region ORBIT VELOCITY
+
+						public const string ORBIT_VELOCITY = "orbit_velocity";
+						public const string ORBIT_VELOCITY_RANDOM = "orbit_velocity_random";
+						public const string ORBIT_VELOCITY_CURVE = "orbit_velocity_curve";
+
+						#endregion ORBIT VELOCITY
+
+						#region LINEAR ACCEL
+
+						public const string LINEAR_ACCEL = "linear_accel";
+						public const string LINEAR_ACCEL_RANDOM = "linear_accel_random";
+						public const string LINEAR_ACCEL_CURVE = "linear_accel_curve";
+
+						#endregion LINEAR ACCEL
+
+						#region RADIAL ACCEL
+
+						public const string RADIAL_ACCEL = "radial_accel";
+						public const string RADIAL_ACCEL_RANDOM = "radial_accel_random";
+						public const string RADIAL_ACCEL_CURVE = "radial_accel_curve";
+
+						#endregion RADIAL ACCEL
+
+						#region TANGENTIAL ACCEL
+
+						public const string TANGENTIAL_ACCEL = "tangential_accel";
+						public const string TANGENTIAL_ACCEL_RANDOM = "tangential_accel_random";
+						public const string TANGENTIAL_ACCEL_CURVE = "tangential_accel_curve";
+
+						#endregion TANGENTIAL ACCEL
+
+						#region DAMPING
+
+						public const string DAMPING = "damping";
+						public const string DAMPING_RANDOM = "damping_random";
+						public const string DAMPING_CURVE = "damping_curve";
+
+						#endregion DAMPING
+
+						#region ANGLE
+
+						public const string ANGLE = "angle";
+						public const string ANGLE_RANDOM = "angle_random";
+						public const string ANGLE_CURVE = "angle_curve";
+
+						#endregion ANGLE
+
+						#region SCALE
+
+						public const string SCALE_AMOUNT = "scale_amount";
+						public const string SCALE_AMOUNT_RANDOM = "scale_amount_random";
+						public const string SCALE_AMOUNT_CURVE = "scale_amount_curve";
+
+						#endregion SCALE
+
+						#region COLOR
+
+						public const string COLOR = "color";
+						public const string COLOR_RAMP = "color_ramp";
+
+						#endregion COLOR
+
+						#region HUE VARIATION
+
+						public const string HUE_VARIATION = "hue_variation";
+						public const string HUE_VARIATION_RANDOM = "hue_variation_random";
+						public const string HUE_VARIATION_CURVE = "hue_variation_curve";
+
+						#endregion HUE VARIATION
+
+						#region ANIMATION
+
+						public const string ANIM_SPEED = "anim_speed";
+						public const string ANIM_SPEED_RANDOM = "anim_speed_random";
+						public const string ANIM_SPEED_CURVE = "anim_speed_curve";
+						public const string ANIM_OFFSET = "anim_offset";
+						public const string ANIM_OFFSET_RANDOM = "anim_offset_random";
+						public const string ANIM_OFFSET_CURVE = "anim_offset_curve";
+
+						#endregion ANIMATION
+					}
+
 					public static class Camera2D
 					{
 						public const string OFFSET = "offset";
