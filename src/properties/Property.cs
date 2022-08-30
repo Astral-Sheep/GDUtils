@@ -133,6 +133,18 @@
 								public const string DIALOG_AUTOWRAP = "dialog_autowrap";
 
 								#endregion DIALOG
+
+								public static class FileDialog
+								{
+									public const string MODE_OVERRIDES_TITLE = "mode_overrides_title";
+									public const string MODE = "mode";
+									public const string ACCESS = "access";
+									public const string FILTERS = "filters";
+									public const string SHOW_HIDDEN_FILES = "show_hidden_files";
+									public const string CURRENT_DIR = "current_dir";
+									public const string CURRENT_FILE = "current_file";
+									public const string CURRENT_PATH = "current_path";
+								}
 							}
 						}
 
