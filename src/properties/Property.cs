@@ -44,6 +44,19 @@
 
 					#endregion Z INDEX
 
+					public static class AnimatedSprite
+					{
+						public const string FRAMES = "frames";
+						public const string ANIMATION = "animation";
+						public const string FRAME = "frame";
+						public const string SPEED_SCALE = "speed_scale";
+						public const string PLAYING = "playing";
+						public const string CENTERED = "centered";
+						public const string OFFSET = "offset";
+						public const string FLIP_H = "flip_h";
+						public const string FLIP_V = "flip_v";
+					}
+
 					public static class CollisionObject2D
 					{
 						#region COLLISION
