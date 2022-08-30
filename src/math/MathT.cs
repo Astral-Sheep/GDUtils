@@ -41,7 +41,7 @@ namespace Com.Surbon.GDUtils.Math
 		/// <summary>
 		/// Linearly interpolates between to values by a random normalized ratio (between 0 and 1).
 		/// </summary>
-		public static float LerpRand(float a, float b) => LerpUnclamped(a, b, new RandomNumberGenerator().Randf());
+		public static float LerpRand(float a, float b) => LerpUnclamped(a, b, RandomT.RandfInclusive());
 
 		/// <summary>
 		/// Linearly interpolates between to values by a given ratio.

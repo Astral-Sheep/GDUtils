@@ -1,7 +1,7 @@
 ﻿using Godot;
 using System;
 
-namespace Com.Surbon.GDUtils.src.math
+namespace Com.Surbon.GDUtils.Math
 {
 	public static class RandomT
 	{

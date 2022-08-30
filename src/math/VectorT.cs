@@ -96,9 +96,7 @@ namespace Com.Surbon.GDUtils.Math
 		/// </summary>
 		public static Vector2 LerpRand(Vector2 from, Vector2 to)
 		{
-			float lRandom = new RandomNumberGenerator().Randf();
-
-			return LerpUnclamped(from, to, lRandom);
+			return LerpUnclamped(from, to, RandomT.RandfInclusive());
 		}
 
 		/// <summary>
@@ -106,9 +104,7 @@ namespace Com.Surbon.GDUtils.Math
 		/// </summary>
 		public static Vector3 LerpRand(Vector3 from, Vector3 to)
 		{
-			float lRandom = new RandomNumberGenerator().Randf();
-
-			return LerpUnclamped(from, to, lRandom);
+			return LerpUnclamped(from, to, RandomT.RandfInclusive());
 		}
 
 		/// <summary>
