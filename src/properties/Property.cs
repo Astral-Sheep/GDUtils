@@ -58,6 +58,12 @@
 							public const string STIFFNESS = "stiffness";
 							public const string DAMPING = "damping";
 						}
+
+						public static class GrooveJoint2D
+						{
+							public const string LENGTH = "length";
+							public const string INITIAL_OFFSET = "initial_offset";
+						}
 					}
 
 					public static class Light2D
