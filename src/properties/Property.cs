@@ -44,6 +44,20 @@
 
 					#endregion Z INDEX
 
+					public static class RemoteTransform2D
+					{
+						public const string REMOTE_PATH = "remote_path";
+						public const string USE_GLOBAL_COORDINATES = "use_global_coordinates";
+
+						#region UPDATE
+
+						public const string UPDATE_POSITION = "update_position";
+						public const string UPDATE_ROTATION = "update_rotation";
+						public const string UPDATE_SCALE = "update_scale";
+
+						#endregion UPDATE
+					}
+
 					public static class Sprite
 					{
 						public const string TEXTURE = "texture";
