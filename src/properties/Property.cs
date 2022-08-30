@@ -124,6 +124,12 @@
 						public const string SHORTCUT = "shortcut";
 						public const string GROUP = "group";
 
+						public static class LinkButton
+						{
+							public const string TEXT = "text";
+							public const string UNDERLINE = "underline";
+						}
+
 						public static class TextureButton
 						{
 							public const string EXPAND = "expand";
