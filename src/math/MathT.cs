@@ -107,4 +107,15 @@ namespace Com.Surbon.GDUtils.Math
 			return b < 0 ? NegPow(a, -b) : PosPow(a, b);
 		}
 	}
+
+	public static class Vector2T
+	{
+		/// <summary>
+		/// Linearly interpolates two vectors by the given weight.
+		/// </summary>
+		public static Vector2 LerpUnclamped(Vector2 from, Vector2 to, float weight)
+		{
+			return new Vector2(MathT.LerpUnclamped(from.x, to.x, weight), MathT.LerpUnclamped(from.y, to.y, weight));
+		}
+	}
 }
