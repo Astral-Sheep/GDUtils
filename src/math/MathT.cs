@@ -135,6 +135,45 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
+		/// Sets the values of the vector between the given min and max.
+		/// </summary>
+		public static Vector2 ClampValues(Vector2 vector, float minX, float maxX, float minY, float maxY)
+		{
+			return new Vector2(
+				Mathf.Clamp(vector.x, minX, maxX),
+				Mathf.Clamp(vector.y, minY, maxY)
+				);
+		}
+
+		/// <summary>
+		/// Sets the values of the vector between the given min and max.
+		/// </summary>
+		public static Vector3 ClampValues(Vector3 vector, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
+		{
+			return new Vector3(
+				Mathf.Clamp(vector.x, minX, maxX),
+				Mathf.Clamp(vector.y, minY, maxY),
+				Mathf.Clamp(vector.z, minZ, maxZ)
+				);
+		}
+
+		/// <summary>
+		/// Sets the values of the vector between the given min and max.
+		/// </summary>
+		public static Vector2 ClampValuesUniform(Vector2 vector, float min, float max)
+		{
+			return ClampValues(vector, min, max, min, max);
+		}
+
+		/// <summary>
+		/// Sets the values of the vector between the given min and max.
+		/// </summary>
+		public static Vector3 ClampValuesUniform(Vector3 vector, float min, float max)
+		{
+			return ClampValues(vector, min, max, min, max, min, max);
+		}
+
+		/// <summary>
 		/// Linearly interpolates to vectors by a normalized value.
 		/// </summary>
 		public static Vector2 Lerp(Vector2 from, Vector2 to, float weight)
