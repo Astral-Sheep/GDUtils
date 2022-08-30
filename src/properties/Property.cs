@@ -118,6 +118,15 @@
 						public const string POPUP_EXCLUSIVE = "popup_exclusive";
 
 						#endregion POPUP
+
+						public static class PopupMenu
+						{
+							public const string HIDE_ON_ITEM_SELECTION = "hide_on_item_selection";
+							public const string HIDE_ON_CHECKABLE_ITEM_SELECTION = "hide_on_checkable_item_selection";
+							public const string HIDE_ON_STATE_ITEM_SELECTION = "hide_on_state_item_selection";
+							public const string SUBMENU_POPUP_DELAY = "submenu_popup_delay";
+							public const string ALLOW_SEARCH = "allow_search";
+						}
 					}
 
 					public static class Container
