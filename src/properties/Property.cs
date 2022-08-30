@@ -113,6 +113,11 @@
 
 					public static class Container
 					{
+						public static class CenterContainer
+						{
+							public const string USE_TOP_LEFT = "use_top_left";
+						}
+
 						public static class BoxContainer
 						{
 							public const string ALIGNMENT = "alignment";
