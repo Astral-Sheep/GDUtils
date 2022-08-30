@@ -113,6 +113,13 @@
 
 					public static class Container
 					{
+						public static class SplitContainer
+						{
+							public const string SPLIT_OFFSET = "split_offset";
+							public const string COLLAPSED = "collapsed";
+							public const string DRAGGER_VISIBILITY = "dragger_visibility";
+						}
+
 						public static class ScrollContainer
 						{
 							public const string FOLLOW_FOCUS = "follow_focus";
