@@ -111,6 +111,28 @@
 
 					#endregion THEME
 
+					public static class RichTextLabel
+					{
+						public const string VISIBLE_CHARACTERS = "visible_characters";
+						public const string PERCENT_VISIBLE = "percent_visible";
+						public const string META_UNDERLINED = "meta_underlined";
+						public const string TAB_SIZE = "tab_size";
+						public const string TEXT = "text";
+						public const string FIT_CONTENT_HEIGHT = "fit_content_height";
+						public const string SCROLL_ACTIVE = "scroll_active";
+						public const string SCROLL_FOLLOWING = "scroll_following";
+						public const string SELECTION_ENABLED = "selection_enabled";
+						public const string OVERRIDE_SELECTED_FONT_COLOR = "override_selected_font_color";
+						public const string CUSTOM_EFFECTS = "custom_effects";
+
+						#region BB CODE
+
+						public const string BB_CODE_ENABLED = "bbcode_enabled";
+						public const string BB_CODE_TEXT = "bbcode_text";
+
+						#endregion BB CODE
+					}
+
 					public static class Tabs
 					{
 						public const string CURRENT_TAB = "current_tab";
