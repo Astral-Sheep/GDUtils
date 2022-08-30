@@ -44,6 +44,38 @@
 
 					#endregion Z INDEX
 
+					public static class Sprite
+					{
+						public const string TEXTURE = "texture";
+						public const string NORMAL_MAP = "normal_map";
+
+						#region OFFSET
+
+						public const string CENTERED = "centered";
+						public const string OFFSET = "offset";
+						public const string FLIP_H = "flip_h";
+						public const string FLIP_V = "flip_v";
+
+						#endregion OFFSET
+
+						#region ANIMATION
+
+						public const string H_FRAMES = "h_frames";
+						public const string V_FRAMES = "v_frames";
+						public const string FRAME = "frame";
+						public const string FRAME_COORDS = "frame_coords";
+
+						#endregion ANIMATION
+
+						#region REGION
+
+						public const string REGION_ENABLED = "region_enabled";
+						public const string REGION_RECT = "region_rect";
+						public const string FILTER_CLIP = "filter_clip";
+
+						#endregion REGION
+					}
+
 					public static class TileMap
 					{
 						public const string MODE = "mode";
