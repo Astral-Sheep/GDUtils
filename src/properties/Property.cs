@@ -44,6 +44,14 @@
 
 					#endregion Z INDEX
 
+					public static class Joint2D
+					{
+						public const string NODE_A = "node_a";
+						public const string NODE_B = "node_b";
+						public const string BIAS = "bias";
+						public const string DISABLE_COLLISION = "disable_collision";
+					}
+
 					public static class Light2D
 					{
 						public const string ENABLED = "enabled";
