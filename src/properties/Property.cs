@@ -44,6 +44,21 @@
 
 					#endregion Z INDEX
 
+					public static class RayCast2D
+					{
+						public const string ENABLED = "enabled";
+						public const string EXCLUDE_PARENT = "exclude_parent";
+						public const string CAST_TO = "cast_to";
+						public const string COLLISION_MASK = "collision_mask";
+
+						#region COLLIDE WITH
+
+						public const string COLLIDE_WITH_AREAS = "collide_with_areas";
+						public const string COLLIDE_WITH_BODIES = "collide_with_bodies";
+
+						#endregion COLLIDE WITH
+					}
+
 					public static class RemoteTransform2D
 					{
 						public const string REMOTE_PATH = "remote_path";
