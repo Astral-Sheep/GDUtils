@@ -44,6 +44,11 @@
 
 					#endregion Z INDEX
 
+					public static class Listener2D
+					{
+						public const string CURRENT = "current";
+					}
+
 					public static class MeshInstance2D
 					{
 						public const string MESH = "mesh";
