@@ -113,6 +113,16 @@
 
 					public static class Container
 					{
+						public static class TabContainer
+						{
+							public const string TAB_ALIGN = "tab_align";
+							public const string CURRENT_TAB = "current_tab";
+							public const string TABS_VISIBLE = "tabs_visible";
+							public const string ALL_TABS_IN_FRONT = "all_tabs_in_front";
+							public const string DRAG_TO_REARRANGE_ENABLED = "drag_to_rearrange_enabled";
+							public const string USE_HIDDEN_TABS_FOR_MIN_SIZE = "use_hidden_tabs_for_min_size";
+						}
+
 						public static class ViewportContainer
 						{
 							public const string STRETCH = "stretch";
