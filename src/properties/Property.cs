@@ -44,6 +44,46 @@
 
 					#endregion Z INDEX
 
+					public static class Particles2D
+					{
+						public const string EMITTING = "emitting";
+						public const string AMOUNT = "amount";
+
+						#region TIME
+
+						public const string LIFETIME = "lifetime";
+						public const string ONE_SHOT = "one_shot";
+						public const string PREPROCESS = "preprocess";
+						public const string SPEED_SCALE = "speed_scale";
+						public const string EXPLOSIVENESS = "explosiveness";
+						public const string RANDOMNESS = "randomness";
+						public const string FIXED_FPS = "fixed_fps";
+						public const string FRACT_DELTA = "fract_delta";
+
+						#endregion TIME
+
+						#region DRAWING
+
+						public const string VISIBILITY_RECT = "visibility_rect";
+						public const string LOCAL_COORDS = "local_coords";
+						public const string DRAW_ORDER = "draw_order";
+
+						#endregion DRAWING
+
+						#region PROCESS MATERIAL
+
+						public const string MATERIAL = "material";
+
+						#endregion PROCESS MATERIAL
+
+						#region TEXTURES
+
+						public const string TEXTURE = "texture";
+						public const string NORMAL_MAP = "normal_map";
+
+						#endregion TEXTURES
+					}
+
 					public static class Path2D
 					{
 						public const string CURVE = "curve";
