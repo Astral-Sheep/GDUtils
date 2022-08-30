@@ -84,6 +84,21 @@
 
 							#endregion AUDIO BUS
 						}
+
+						public static class KinematicBody2D
+						{
+							#region COLLISION
+
+							public const string COLLISION_SAFE_MARGIN = "collision/safe_margin";
+
+							#endregion COLLISION
+
+							#region MOTION
+
+							public const string MOTION_SYNC_TO_PHYSICS = "motion/sync_to_physics";
+
+							#endregion MOTION
+						}
 					}
 
 					public static class AudioStreamPlayer2D
