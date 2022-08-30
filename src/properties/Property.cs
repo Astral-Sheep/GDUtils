@@ -111,6 +111,32 @@
 
 					#endregion THEME
 
+					public static class GraphEdit
+					{
+						public const string RIGHT_DISCONNECTS = "right_disconnects";
+						public const string SCROLL_OFFSET = "scroll_offset";
+						public const string SNAP_DISTANCE = "snap_distance";
+						public const string USE_SNAP = "use_snap";
+
+						#region ZOOM
+
+						public const string ZOOM = "zoom";
+						public const string ZOOM_MIN = "zoom_min";
+						public const string ZOOM_MAX = "zoom_max";
+						public const string ZOOM_STEP = "zoom_step";
+						public const string SHOW_ZOOM_LABEL = "show_zoom_label";
+
+						#endregion ZOOM
+
+						#region MINIMAP
+
+						public const string MINIMAP_ENABLED = "minimap_enabled";
+						public const string MINIMAP_SIZE = "minimap_size";
+						public const string MINIMAP_OPACITY = "minimap_opacity";
+
+						#endregion MINIMAP
+					}
+
 					public static class Range
 					{
 						public const string MIN_VALUE = "min_value";
