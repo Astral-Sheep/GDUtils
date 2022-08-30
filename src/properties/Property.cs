@@ -123,6 +123,25 @@
 						public const string KEEP_PRESSED_OUTSIDE = "keep_pressed_outside";
 						public const string SHORTCUT = "shortcut";
 						public const string GROUP = "group";
+
+						public static class TextureButton
+						{
+							public const string EXPAND = "expand";
+							public const string STRETCH_MODE = "stretch_mode";
+							public const string FLIP_H = "flip_h";
+							public const string FLIP_V = "flip_v";
+
+							#region TEXTURES
+
+							public const string TEXTURE_NORMAL = "texture_normal";
+							public const string TEXTURE_PRESSED = "texture_pressed";
+							public const string TEXTURE_HOVER = "texture_hover";
+							public const string TEXTURE_DISABLED = "texture_disabled";
+							public const string TEXTURE_FOCUSED = "texture_focused";
+							public const string TEXTURE_CLICK_MASK = "texture_click_mask";
+
+							#endregion TEXTURES
+						}
 					}
 
 					public static class ColorRect
