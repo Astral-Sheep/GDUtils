@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Godot;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,46 @@ namespace Com.Surbon.GDUtils.Node
 {
 	public static class NodeT
 	{
+		/// <summary>
+		/// Returns the nth parent of the given node, or a null instance if the node lacks parent. It returns the node's highest parent if it is below n.
+		/// </summary>
+		public static Godot.Node GetParent(Godot.Node node, int n)
+		{
+			Godot.Node lCurrentNode = node;
+			Godot.Node lParent = null;
 
+			for (int i = 0; i < n; i++)
+			{
+				lParent = lCurrentNode.GetParent();
+
+				if (lParent == null) break;
+
+				lCurrentNode = lParent;
+			}
+
+			if (lCurrentNode == node) return null;
+			else if (lParent == null) return lCurrentNode;
+			return lCurrentNode;
+		}
+
+		/// <summary>
+		/// Returns the nth parent of the given node, or a null instance if the node lacks parent or its highest parent is below n.
+		/// </summary>
+		public static T GetParent<T>(Godot.Node node, int n) where T: Godot.Node
+		{
+			Godot.Node lCurrentNode = node;
+			Godot.Node lParent = null;
+
+			for (int i = 0; i < n; i++)
+			{
+				lParent = lCurrentNode.GetParent();
+
+				if (lParent == null) return null;
+
+				lCurrentNode = lParent;
+			}
+
+			return (T)lCurrentNode;
+		}
 	}
 }
