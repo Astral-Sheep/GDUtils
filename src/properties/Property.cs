@@ -111,6 +111,38 @@
 
 					#endregion THEME
 
+					public static class LineEdit
+					{
+						public const string TEXT = "text";
+						public const string ALIGN = "align";
+						public const string MAX_LENGTH = "max_length";
+						public const string EDITABLE = "editable";
+						public const string SECRET = "secret";
+						public const string SECRET_CHARACTER = "secret_character";
+						public const string EXPAND_TO_TEXT_LENGTH = "expand_to_text_length";
+						public const string CONTEXT_MENU_ENABLED = "context_menu_enabled";
+						public const string VIRTUAL_KEYBOARD_ENABLED = "virtual_keyboard_enabled";
+						public const string CLEAR_BUTTON_ENABLED = "clear_button_enabled";
+						public const string SHORTCUT_KEYS_ENABLED = "shortcut_keys_enabled";
+						public const string SELECTING_ENABLED = "selecting_enabled";
+						public const string RIGHT_ICON = "right_icon";
+
+						#region PLACEHOLDER
+
+						public const string PLACEHOLDER_TEXT = "placeholder_text";
+						public const string PLACEHOLDER_ALPHA = "placeholder_alpha";
+
+						#endregion PLACEHOLDER
+
+						#region CARET
+
+						public const string CARET_BLINK = "caret_blink";
+						public const string CARET_BLINK_SPEED = "caret_blink_speed";
+						public const string CARET_POSITION = "caret_position";
+
+						#endregion CARET
+					}
+
 					public static class NinePatchRect
 					{
 						public const string TEXTURE = "texture";
