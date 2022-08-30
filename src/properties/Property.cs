@@ -99,6 +99,13 @@
 
 							#endregion MOTION
 						}
+
+						public static class StaticBody2D
+						{
+							public const string CONSTANT_LINEAR_VELOCITY = "constant_linear_velocity";
+							public const string CONSTANT_ANGULAR_VELOCITY = "constant_angular_velocity";
+							public const string PHYSICS_MATERIAL_OVERRIDE = "physics_material_override";
+						}
 					}
 
 					public static class AudioStreamPlayer2D
