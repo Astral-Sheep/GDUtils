@@ -44,6 +44,14 @@
 
 					#endregion Z INDEX
 
+					public static class CollisionShape2D
+					{
+						public const string SHAPE = "shape";
+						public const string DISABLED = "disabled";
+						public const string ONE_WAY_COLLISION = "one_way_collision";
+						public const string ONE_WAY_COLLISION_MARGIN = "one_way_collision_margin";
+					}
+
 					public static class Joint2D
 					{
 						public const string NODE_A = "node_a";
