@@ -44,6 +44,45 @@
 
 					#endregion Z INDEX
 
+					public static class Polygon2D
+					{
+						public const string COLOR = "color";
+						public const string OFFSET = "offset";
+						public const string ANTIALIASED = "antialiased";
+
+						#region TEXTURE
+
+						public const string TEXTURE = "texture";
+						public const string TEXTURE_OFFSET = "texture_offset";
+						public const string TEXTURE_SCALE = "texture_scale";
+						public const string TEXTURE_ROTATION_DEGREES = "texture_rotation_degrees";
+
+						#endregion TEXTURE
+
+						#region SKELETON
+
+						public const string SKELETON = "skeleton";
+
+						#endregion SKELETON
+
+						#region INVERT
+
+						public const string INVERT_ENABLE = "invert_enable";
+						public const string INVERT_BORDER = "invert_border";
+
+						#endregion INVERT
+
+						#region DATA
+
+						public const string POLYGON = "polygon";
+						public const string UV = "uv";
+						public const string VERTEX_COLORS = "vertex_colors";
+						public const string POLYGONS = "polygons";
+						public const string INTERNAL_VERTEX_COUNT = "internal_vertex_count";
+
+						#endregion DATA
+					}
+
 					public static class Position2D
 					{
 						public const string GIZMO_EXTENTS = "gizmo_extents";
