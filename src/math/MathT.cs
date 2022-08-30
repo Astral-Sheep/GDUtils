@@ -111,6 +111,30 @@ namespace Com.Surbon.GDUtils.Math
 	public static class VectorT
 	{
 		/// <summary>
+		/// Set the length of the vector between the given min and max.
+		/// </summary>
+		public static Vector2 ClampLength(Vector2 vector, float min, float max)
+		{
+			float lLength = vector.LengthSquared();
+
+			if (lLength < min * min) return Normalize(vector, min);
+			else if (lLength > max * max) return Normalize(vector, max);
+			return vector;
+		}
+
+		/// <summary>
+		/// Set the length of the vector between the given min and max.
+		/// </summary>
+		public static Vector3 ClampLength(Vector3 vector, float min, float max)
+		{
+			float lLength = vector.LengthSquared();
+
+			if (lLength < min * min) return Normalize(vector, min);
+			else if (lLength > max * max) return Normalize(vector, max);
+			return vector;
+		}
+
+		/// <summary>
 		/// Linearly interpolates to vectors by a normalized value.
 		/// </summary>
 		public static Vector2 Lerp(Vector2 from, Vector2 to, float weight)
@@ -167,6 +191,22 @@ namespace Com.Surbon.GDUtils.Math
 				MathT.LerpUnclamped(from.y, to.y, weight),
 				MathT.LerpUnclamped(from.z, to.z, weight)
 				);
+		}
+
+		/// <summary>
+		/// Normalize the length of the vector to the given length.
+		/// </summary>
+		public static Vector2 Normalize(Vector2 vector, float length = 1)
+		{
+			return vector.Normalized() * length;
+		}
+
+		/// <summary>
+		/// Normalize the length of the vector to the given length.
+		/// </summary>
+		public static Vector3 Normalize(Vector3 vector, float length = 1)
+		{
+			return vector.Normalized() * length;
 		}
 	}
 }
