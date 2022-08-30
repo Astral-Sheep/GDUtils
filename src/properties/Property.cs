@@ -113,6 +113,17 @@
 
 					public static class Container
 					{
+						public static class GraphNode
+						{
+							public const string TITLE = "title";
+							public const string OFFSET = "offset";
+							public const string SHOW_CLOSE = "show_close";
+							public const string RESIZABLE = "resizable";
+							public const string SELECTED = "selected";
+							public const string COMMENT = "comment";
+							public const string OVERLAY = "overlay";
+						}
+
 						public static class GridContainer
 						{
 							public const string COLUMNS = "columns";
