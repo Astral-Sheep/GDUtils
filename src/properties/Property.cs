@@ -113,6 +113,11 @@
 
 					public static class Container
 					{
+						public static class BoxContainer
+						{
+							public const string ALIGNMENT = "alignment";
+						}
+
 						public static class GraphNode
 						{
 							public const string TITLE = "title";
