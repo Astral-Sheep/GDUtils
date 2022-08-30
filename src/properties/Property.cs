@@ -8,6 +8,64 @@
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			public static class CanvasItem
+			{
+				#region VISIBILITY
+
+				public const string VISIBLE = "visible";
+				public const string MODULATE = "modulate";
+				public const string SELF_MODULATE = "self_modulate";
+				public const string SHOW_BEHIND_PARENT = "show_behind_parent";
+				public const string LIGHT_MASK = "light_mask";
+
+				#endregion VISIBILITY
+
+				#region MATERIAL
+
+				public const string MATERIAL = "material";
+				public const string USE_PARENT_MATERIAL = "use_parent_material";
+
+				#endregion MATERIAL
+
+				public static class Node2D
+				{
+					#region TRANSFORM
+
+					public const string POSITION = "position";
+					public const string ROTATION_DEGREES = "rotation_degrees";
+					public const string SCALE = "scale";
+
+					#endregion TRANSFORM
+
+					#region Z INDEX
+
+					public const string Z_INDEX = "z_index";
+					public const string Z_AS_RELATIVE = "z_as_relative";
+
+					#endregion Z INDEX
+
+					public static class VisibilityNotifier2D
+					{
+						public const string RECT = "rect";
+
+						public static class VisibilityEnabler2D
+						{
+							public const string PAUSE_ANIMATIONS = "pause_animations";
+							public const string FREEZE_BODIES = "freeze_bodies";
+							public const string PAUSE_PARTICLES = "pause_particles";
+							public const string PAUSE_ANIMATED_SPRITES = "pause_animated_sprites";
+							public const string PROCESS_PARENT = "process_parent";
+							public const string PHYSICS_PROCESS_PARENT = "physics_process_parent";
+						}
+					}
+
+					public static class YSort
+					{
+						public const string SORT_ENABLED = "sort_enabled";
+					}
+				}
+			}
+
 			public static class AnimationPlayer
 			{
 				public const string ROOT_NODE = "root_node";
