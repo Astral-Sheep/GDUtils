@@ -111,6 +111,22 @@ namespace Com.Surbon.GDUtils.Math
 	public static class VectorT
 	{
 		/// <summary>
+		/// Linearly interpolates to vectors by a normalized value.
+		/// </summary>
+		public static Vector2 Lerp(Vector2 from, Vector2 to, float weight)
+		{
+			return LerpUnclamped(from, to, Mathf.Clamp(weight, 0, 1));
+		}
+
+		/// <summary>
+		/// Linearly interpolates to vectors by a normalized value.
+		/// </summary>
+		public static Vector3 Lerp(Vector3 from, Vector3 to, float weight)
+		{
+			return LerpUnclamped(from, to, Mathf.Clamp(weight, 0, 1));
+		}
+
+		/// <summary>
 		/// Linearly interpolates two vectors by a normalized random value.
 		/// </summary>
 		public static Vector2 LerpRand(Vector2 from, Vector2 to)
