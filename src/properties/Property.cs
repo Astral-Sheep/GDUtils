@@ -113,6 +113,19 @@
 
 					public static class Container
 					{
+						public static class AspectRatioContainer
+						{
+							public const string RATIO = "ratio";
+							public const string STRETCH_MODE = "stretch_mode";
+
+							#region ALIGNMENT
+
+							public const string ALIGNMENT_HORIZONTAL = "alignment_horizontal";
+							public const string ALIGNMENT_VERTICAL = "alignment_vertical";
+
+							#endregion ALIGNMENT
+						}
+
 						public static class CenterContainer
 						{
 							public const string USE_TOP_LEFT = "use_top_left";
