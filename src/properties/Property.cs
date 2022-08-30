@@ -113,6 +113,11 @@
 
 					public static class Container
 					{
+						public static class GridContainer
+						{
+							public const string COLUMNS = "columns";
+						}
+
 						public static class SplitContainer
 						{
 							public const string SPLIT_OFFSET = "split_offset";
