@@ -124,6 +124,16 @@
 						public const string SHORTCUT = "shortcut";
 						public const string GROUP = "group";
 
+						public static class Button
+						{
+							public const string TEXT = "text";
+							public const string ICON = "icon";
+							public const string FLAT = "flat";
+							public const string CLIP_TEXT = "clip_text";
+							public const string ALIGN = "align";
+							public const string EXPAND_ICON = "expand_icon";
+						}
+
 						public static class LinkButton
 						{
 							public const string TEXT = "text";
