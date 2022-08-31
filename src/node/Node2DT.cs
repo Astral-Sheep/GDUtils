@@ -9,25 +9,14 @@ namespace Com.Surbon.GDUtils.Node
 {
 	public static class Node2DT
 	{
-		public class AreaPlayer2D : GameObject2D
+		public class Mobile2D : GameObject2D
 		{
-			// Body fields
-			[Export] protected NodePath bodyPath;
-			protected Area2D body;
-
 			// Movement fields
 			[Export] protected bool instantAcceleration = false;
 			[Export] protected float speed = 500;
 			[Export] protected float acceleration = 100;
 			protected Vector2 velocity = Vector2.Zero;
 			protected Vector2 accelerationVec = Vector2.Zero;
-
-			public override void _Ready()
-			{
-				base._Ready();
-
-				body = GetNode<Area2D>(bodyPath);
-			}
 
 			public virtual void Move(Vector2 pDirection, float pDelta)
 			{
@@ -44,6 +33,20 @@ namespace Com.Surbon.GDUtils.Node
 				}
 
 				Position += velocity * pDelta;
+			}
+		}
+
+		public class AreaPlayer2D : Mobile2D
+		{
+			// Body fields
+			[Export] protected NodePath bodyPath;
+			protected Area2D body;
+
+			public override void _Ready()
+			{
+				base._Ready();
+
+				body = GetNode<Area2D>(bodyPath);
 			}
 		}
 	}
