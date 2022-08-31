@@ -1,4 +1,5 @@
-﻿using Com.Surbon.GDUtils.StateMachines;
+﻿using Com.Surbon.GDUtils.Math;
+using Com.Surbon.GDUtils.StateMachines;
 using Godot;
 using System;
 using System.Collections.Generic;
@@ -10,14 +11,39 @@ namespace Com.Surbon.GDUtils.Node
 	{
 		public class AreaPlayer2D : GameObject2D
 		{
+			// Body fields
 			[Export] protected NodePath bodyPath;
 			protected Area2D body;
+
+			// Movement fields
+			[Export] protected bool instantAcceleration = false;
+			[Export] protected float speed = 500;
+			[Export] protected float acceleration = 100;
+			protected Vector2 velocity = Vector2.Zero;
+			protected Vector2 accelerationVec = Vector2.Zero;
 
 			public override void _Ready()
 			{
 				base._Ready();
 
 				body = GetNode<Area2D>(bodyPath);
+			}
+
+			public virtual void Move(Vector2 pDirection, float pDelta)
+			{
+				pDirection = VectorT.ClampLength(pDirection, 0, 1);
+
+				if (instantAcceleration)
+				{
+					velocity = pDirection * speed;
+				}
+				else
+				{
+					accelerationVec = pDirection * acceleration;
+					velocity += accelerationVec * pDelta;
+				}
+
+				Position += velocity * pDelta;
 			}
 		}
 	}
