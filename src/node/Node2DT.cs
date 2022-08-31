@@ -36,6 +36,20 @@ namespace Com.Surbon.GDUtils.Node
 			}
 		}
 
+		public class KinematicPlayer2D : Mobile2D
+		{
+			// Body fields
+			[Export] protected NodePath bodyPath;
+			protected KinematicBody2D body;
+
+			public override void _Ready()
+			{
+				base._Ready();
+
+				body = GetNode<KinematicBody2D>(bodyPath);
+			}
+		}
+
 		public class AreaPlayer2D : Mobile2D
 		{
 			// Body fields
