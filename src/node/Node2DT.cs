@@ -1,9 +1,6 @@
 ﻿using Com.Surbon.GDUtils.Math;
 using Com.Surbon.GDUtils.StateMachines;
 using Godot;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Com.Surbon.GDUtils.Node
 {
@@ -12,12 +9,19 @@ namespace Com.Surbon.GDUtils.Node
 		public class Mobile2D : GameObject2D
 		{
 			// Movement fields
+			[Export] protected bool useFriction = true;
 			[Export] protected bool instantAcceleration = false;
 			[Export] protected float speed = 500;
 			[Export] protected float acceleration = 100;
+			[Export] protected float friction = 0.5f;
 			protected Vector2 velocity = Vector2.Zero;
 			protected Vector2 accelerationVec = Vector2.Zero;
 
+			/// <summary>
+			/// Moves the instance in the given direction.
+			/// </summary>
+			/// <param name="pDirection">The direction of the movement clamped between 0 and 1.</param>
+			/// <param name="pDelta">The delta time in seconds.</param>
 			public virtual void Move(Vector2 pDirection, float pDelta)
 			{
 				ComputeVelocity(pDirection, pDelta);
@@ -32,11 +36,15 @@ namespace Com.Surbon.GDUtils.Node
 				if (instantAcceleration)
 				{
 					velocity = pDirection * speed;
+
+					if (useFriction) { velocity = VectorT.Pow(velocity, friction); }
 				}
 				else
 				{
 					accelerationVec = pDirection * acceleration;
 					velocity += accelerationVec * pDelta;
+					if (useFriction) { velocity = VectorT.Pow(velocity, friction); }
+
 					velocity = VectorT.ClampLength(velocity, 0, speed);
 				}
 			}
@@ -47,7 +55,6 @@ namespace Com.Surbon.GDUtils.Node
 			// Body fields
 			[Export] protected NodePath bodyPath;
 			protected KinematicBody2D body;
-			protected KinematicCollision2D collision;
 
 			public override void _Ready()
 			{
@@ -57,7 +64,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 
 			/// <summary>
-			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndCollide"/>.
+			/// Equivalent to the <see cref="KinematicBody2D"/> method <see cref="KinematicBody2D.MoveAndCollide"/> but for <see cref="KinematicMobile2D"/>.
 			/// </summary>
 			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
 			/// <param name="pDelta">The delta time in seconds.</param>
@@ -78,7 +85,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 
 			/// <summary>
-			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndSlide"/>.
+			/// Equivalent to the <see cref="KinematicBody2D"/> method <see cref="KinematicBody2D.MoveAndSlide"/> but for <see cref="KinematicMobile2D"/>.
 			/// </summary>
 			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
 			/// <param name="pDelta">The delta time in seconds.</param>
@@ -89,31 +96,31 @@ namespace Com.Surbon.GDUtils.Node
 				Vector2 lBodyBeginPos = body.GlobalPosition;
 				Vector2 lDistance;
 
-				collision = body.MoveAndCollide(velocity * pDelta);
+				KinematicCollision2D lCollision = body.MoveAndCollide(velocity * pDelta);
 
-				if (collision?.Collider is Node2D)
+				if (lCollision?.Collider is Node2D)
 				{
-					if (collision.Remainder.x != 0 || collision.Remainder.y != 0)
+					if (lCollision.Remainder.x != 0 || lCollision.Remainder.y != 0)
 					{
-						if (collision.Remainder.x == 0 || collision.Remainder.y == 0)
+						if (lCollision.Remainder.x == 0 || lCollision.Remainder.y == 0)
 						{
-							if (collision.Normal.x != 0 && collision.Normal.y != 0)
+							if (lCollision.Normal.x != 0 && lCollision.Normal.y != 0)
 							{
-								Vector2 lRemainder = collision.Remainder.Dot(collision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
-								collision.Normal.Rotated(Mathf.Pi / 2f) :
-								collision.Normal.Rotated(-Mathf.Pi / 2f);
-								lRemainder = VectorT.Normalize(lRemainder, collision.Remainder.Length());
-								body.Position += collision.Normal * 0.01f; // Avoid colliding in the next line
+								Vector2 lRemainder = lCollision.Remainder.Dot(lCollision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
+								lCollision.Normal.Rotated(Mathf.Pi / 2f) :
+								lCollision.Normal.Rotated(-Mathf.Pi / 2f);
+								lRemainder = VectorT.Normalize(lRemainder, lCollision.Remainder.Length());
+								body.Position += lCollision.Normal * 0.01f; // Avoid colliding in the next line
 								body.MoveAndCollide(lRemainder);
 							}
 						}
-						else if (collision.Normal.x / collision.Remainder.x != collision.Normal.y / collision.Remainder.y)
+						else if (lCollision.Normal.x / lCollision.Remainder.x != lCollision.Normal.y / lCollision.Remainder.y)
 						{
-							Vector2 lRemainder = collision.Remainder.Dot(collision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
-								collision.Normal.Rotated(Mathf.Pi / 2f) :
-								collision.Normal.Rotated(-Mathf.Pi / 2f);
-							lRemainder = VectorT.Normalize(lRemainder, collision.Remainder.Length());
-							body.Position += collision.Normal * 0.01f; // Avoid colliding in the next line
+							Vector2 lRemainder = lCollision.Remainder.Dot(lCollision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
+								lCollision.Normal.Rotated(Mathf.Pi / 2f) :
+								lCollision.Normal.Rotated(-Mathf.Pi / 2f);
+							lRemainder = VectorT.Normalize(lRemainder, lCollision.Remainder.Length());
+							body.Position += lCollision.Normal * 0.01f; // Avoid colliding in the next line
 							body.MoveAndCollide(lRemainder);
 						}
 					}
