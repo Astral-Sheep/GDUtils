@@ -6,6 +6,9 @@ namespace Com.Surbon.GDUtils.Node
 {
 	public static class Node2DT
 	{
+		/// <summary>
+		/// Mobile 2D object (useful description isn't it).
+		/// </summary>
 		public class Mobile2D : GameObject2D
 		{
 			// Movement fields
@@ -36,8 +39,6 @@ namespace Com.Surbon.GDUtils.Node
 				if (instantAcceleration)
 				{
 					velocity = pDirection * speed;
-
-					if (useFriction) { velocity = VectorT.Pow(velocity, friction); }
 				}
 				else
 				{
@@ -50,6 +51,9 @@ namespace Com.Surbon.GDUtils.Node
 			}
 		}
 
+		/// <summary>
+		/// Mobile object with a child <see cref="KinematicBody2D"/> to collide. Use method <see cref="GetBody"/> to access it.
+		/// </summary>
 		public class KinematicMobile2D : Mobile2D
 		{
 			// Body fields
@@ -62,6 +66,11 @@ namespace Com.Surbon.GDUtils.Node
 
 				body = GetNode<KinematicBody2D>(bodyPath);
 			}
+
+			/// <summary>
+			/// Returns the <see cref="KinematicBody2D"/> used to collide.
+			/// </summary>
+			public virtual KinematicBody2D GetBody() => body;
 
 			/// <summary>
 			/// Equivalent to the <see cref="KinematicBody2D"/> method <see cref="KinematicBody2D.MoveAndCollide"/> but for <see cref="KinematicMobile2D"/>.
