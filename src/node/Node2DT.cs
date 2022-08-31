@@ -68,7 +68,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 
 			/// <summary>
-			/// Returns the <see cref="KinematicBody2D"/> used to collide.
+			/// Returns the <see cref="KinematicBody2D"/> used for collisions.
 			/// </summary>
 			public virtual KinematicBody2D GetBody() => body;
 
@@ -142,6 +142,9 @@ namespace Com.Surbon.GDUtils.Node
 			}
 		}
 
+		/// <summary>
+		/// Mobile object with a child <see cref="Area2D"/> to collide. Use method <see cref="GetBody"/> to access it.
+		/// </summary>
 		public class AreaMobile2D : Mobile2D
 		{
 			// Body fields
@@ -154,6 +157,11 @@ namespace Com.Surbon.GDUtils.Node
 
 				body = GetNode<Area2D>(bodyPath);
 			}
+
+			/// <summary>
+			/// Returns the Area2D used for collisions.
+			/// </summary>
+			public virtual Area2D GetBody() => body;
 		}
 	}
 }
