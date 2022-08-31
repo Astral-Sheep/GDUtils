@@ -20,6 +20,13 @@ namespace Com.Surbon.GDUtils.Node
 
 			public virtual void Move(Vector2 pDirection, float pDelta)
 			{
+				ComputeVelocity(pDirection, pDelta);
+
+				Position += velocity * pDelta;
+			}
+
+			protected virtual void ComputeVelocity(Vector2 pDirection, float pDelta)
+			{
 				pDirection = VectorT.ClampLength(pDirection, 0, 1);
 
 				if (instantAcceleration)
@@ -31,8 +38,6 @@ namespace Com.Surbon.GDUtils.Node
 					accelerationVec = pDirection * acceleration;
 					velocity += accelerationVec * pDelta;
 				}
-
-				Position += velocity * pDelta;
 			}
 		}
 
@@ -47,6 +52,20 @@ namespace Com.Surbon.GDUtils.Node
 				base._Ready();
 
 				body = GetNode<KinematicBody2D>(bodyPath);
+			}
+
+			public void MoveAndCollide(Vector2 pDirection, float pDelta)
+			{
+				ComputeVelocity(pDirection, pDelta);
+
+				Vector2 lBodyBeginPos = body.GlobalPosition;
+				Vector2 lBodyEndPos;
+
+				body.MoveAndCollide(velocity);
+				lBodyEndPos = body.GlobalPosition;
+
+				body.GlobalPosition = lBodyBeginPos;
+				Position += lBodyEndPos - lBodyBeginPos;
 			}
 		}
 
