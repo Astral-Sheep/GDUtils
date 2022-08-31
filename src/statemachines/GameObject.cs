@@ -3,7 +3,7 @@ using System;
 
 namespace Com.Surbon.GDUtils.StateMachines
 {
-	public class GameObject : Node, IStateMachine
+	public class GameObject : Godot.Node, IStateMachine
 	{
 		protected Action<float> DoAction;
 
