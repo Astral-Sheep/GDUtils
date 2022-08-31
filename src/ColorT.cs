@@ -15,5 +15,25 @@ namespace Com.Surbon.GDUtils
 		public static readonly Color Cyan = new Color(0, 1, 1, 1);
 		public static readonly Color Blue = new Color(0, 0, 1, 1);
 		public static readonly Color Pink = new Color(1, 0, 1, 1);
+
+		public static Color SetAlpha(Color color, float a)
+		{
+			return new Color(color.r, color.g, color.b, a);
+		}
+
+		public static Color SetBlue(Color color, float b)
+		{
+			return new Color(color.r, color.g, b, color.a);
+		}
+
+		public static Color SetGreen(Color color, float g)
+		{
+			return new Color(color.r, g, color.b, color.a);
+		}
+
+		public static Color SetRed(Color color, float r)
+		{
+			return new Color(r, color.g, color.b, color.a);
+		}
 	}
 }
