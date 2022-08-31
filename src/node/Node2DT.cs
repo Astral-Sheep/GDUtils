@@ -37,6 +37,7 @@ namespace Com.Surbon.GDUtils.Node
 				{
 					accelerationVec = pDirection * acceleration;
 					velocity += accelerationVec * pDelta;
+					velocity = VectorT.ClampLength(velocity, 0, speed);
 				}
 			}
 		}
@@ -46,6 +47,7 @@ namespace Com.Surbon.GDUtils.Node
 			// Body fields
 			[Export] protected NodePath bodyPath;
 			protected KinematicBody2D body;
+			protected KinematicCollision2D collision;
 
 			public override void _Ready()
 			{
@@ -54,18 +56,62 @@ namespace Com.Surbon.GDUtils.Node
 				body = GetNode<KinematicBody2D>(bodyPath);
 			}
 
-			public void MoveAndCollide(Vector2 pDirection, float pDelta)
+			/// <summary>
+			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndCollide"/>.
+			/// </summary>
+			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
+			/// <param name="pDelta">The delta time in seconds.</param>
+			public virtual void MoveAndCollide(Vector2 pDirection, float pDelta)
 			{
 				ComputeVelocity(pDirection, pDelta);
 
 				Vector2 lBodyBeginPos = body.GlobalPosition;
 				Vector2 lBodyEndPos;
+				Vector2 lDistance;
 
-				body.MoveAndCollide(velocity);
+				body.MoveAndCollide(velocity * pDelta);
 				lBodyEndPos = body.GlobalPosition;
+				lDistance = lBodyEndPos - lBodyBeginPos;
 
-				body.GlobalPosition = lBodyBeginPos;
-				Position += lBodyEndPos - lBodyBeginPos;
+				GlobalPosition += lDistance;
+				body.Position -= lDistance;
+			}
+
+			/// <summary>
+			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndSlide"/> (Only works on vertical and horizontal surfaces by now).
+			/// </summary>
+			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
+			/// <param name="pDelta">The delta time in seconds.</param>
+			public virtual void MoveAndSlide(Vector2 pDirection, float pDelta)
+			{
+				ComputeVelocity(pDirection, pDelta);
+
+				Vector2 lBodyBeginPos = body.GlobalPosition;
+				Vector2 lBodyEndPos;
+				Vector2 lDistance;
+
+				collision = body.MoveAndCollide(velocity * pDelta);
+
+				if (collision?.Collider is Node2D)
+				{
+					Vector2 lDoneDistance = body.GlobalPosition - lBodyBeginPos;
+					Vector2 lRemainingDistance = velocity * pDelta - lDoneDistance;
+
+					if (body.MoveAndCollide(new Vector2(lRemainingDistance.x, velocity.y > 0 ? -1 : 1), testOnly: true) == null)
+					{
+						body.MoveAndCollide(new Vector2(lRemainingDistance.x, 0));
+					}
+					else if (body.MoveAndCollide(new Vector2(velocity.x > 0 ? -1 : 1, lRemainingDistance.y), testOnly: true) == null)
+					{
+						body.MoveAndCollide(new Vector2(0, lRemainingDistance.y));
+					}
+				}
+
+				lBodyEndPos = body.GlobalPosition;
+				lDistance = lBodyEndPos - lBodyBeginPos;
+
+				GlobalPosition += lDistance;
+				body.Position -= lDistance;
 			}
 		}
 
