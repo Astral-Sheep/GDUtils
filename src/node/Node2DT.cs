@@ -42,7 +42,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 		}
 
-		public class KinematicPlayer2D : Mobile2D
+		public class KinematicMobile2D : Mobile2D
 		{
 			// Body fields
 			[Export] protected NodePath bodyPath;
@@ -78,7 +78,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 
 			/// <summary>
-			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndSlide"/> (Only works on vertical and horizontal surfaces by now).
+			/// Equivalent to the KinematicBody2D method <see cref="KinematicBody2D.MoveAndSlide"/>.
 			/// </summary>
 			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
 			/// <param name="pDelta">The delta time in seconds.</param>
@@ -126,7 +126,7 @@ namespace Com.Surbon.GDUtils.Node
 			}
 		}
 
-		public class AreaPlayer2D : Mobile2D
+		public class AreaMobile2D : Mobile2D
 		{
 			// Body fields
 			[Export] protected NodePath bodyPath;
