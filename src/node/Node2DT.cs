@@ -87,28 +87,39 @@ namespace Com.Surbon.GDUtils.Node
 				ComputeVelocity(pDirection, pDelta);
 
 				Vector2 lBodyBeginPos = body.GlobalPosition;
-				Vector2 lBodyEndPos;
 				Vector2 lDistance;
 
 				collision = body.MoveAndCollide(velocity * pDelta);
 
 				if (collision?.Collider is Node2D)
 				{
-					Vector2 lDoneDistance = body.GlobalPosition - lBodyBeginPos;
-					Vector2 lRemainingDistance = velocity * pDelta - lDoneDistance;
-
-					if (body.MoveAndCollide(new Vector2(lRemainingDistance.x, velocity.y > 0 ? -1 : 1), testOnly: true) == null)
+					if (collision.Remainder.x != 0 || collision.Remainder.y != 0)
 					{
-						body.MoveAndCollide(new Vector2(lRemainingDistance.x, 0));
-					}
-					else if (body.MoveAndCollide(new Vector2(velocity.x > 0 ? -1 : 1, lRemainingDistance.y), testOnly: true) == null)
-					{
-						body.MoveAndCollide(new Vector2(0, lRemainingDistance.y));
+						if (collision.Remainder.x == 0 || collision.Remainder.y == 0)
+						{
+							if (collision.Normal.x != 0 && collision.Normal.y != 0)
+							{
+								Vector2 lRemainder = collision.Remainder.Dot(collision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
+								collision.Normal.Rotated(Mathf.Pi / 2f) :
+								collision.Normal.Rotated(-Mathf.Pi / 2f);
+								lRemainder = VectorT.Normalize(lRemainder, collision.Remainder.Length());
+								body.Position += collision.Normal * 0.01f; // Avoid colliding in the next line
+								body.MoveAndCollide(lRemainder);
+							}
+						}
+						else if (collision.Normal.x / collision.Remainder.x != collision.Normal.y / collision.Remainder.y)
+						{
+							Vector2 lRemainder = collision.Remainder.Dot(collision.Normal.Rotated(Mathf.Pi / 2f)) > 0 ?
+								collision.Normal.Rotated(Mathf.Pi / 2f) :
+								collision.Normal.Rotated(-Mathf.Pi / 2f);
+							lRemainder = VectorT.Normalize(lRemainder, collision.Remainder.Length());
+							body.Position += collision.Normal * 0.01f; // Avoid colliding in the next line
+							body.MoveAndCollide(lRemainder);
+						}
 					}
 				}
 
-				lBodyEndPos = body.GlobalPosition;
-				lDistance = lBodyEndPos - lBodyBeginPos;
+				lDistance = body.GlobalPosition - lBodyBeginPos;
 
 				GlobalPosition += lDistance;
 				body.Position -= lDistance;
