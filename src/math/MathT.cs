@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.Math
 {
+	/// <summary>
+	/// Provides static methods for mathematical functions.
+	/// </summary>
 	public static class MathT
 	{
 		/// <summary>
