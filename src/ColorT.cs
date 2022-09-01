@@ -4,7 +4,7 @@ namespace Com.Surbon.GDUtils
 {
 	public static class ColorT
 	{
-		public static readonly Color NONE = new Color(0, 0, 0, 0);
+		public static readonly Color None = new Color(0, 0, 0, 0);
 		public static readonly Color Black = new Color(0, 0, 0, 1);
 		public static readonly Color White = new Color(1, 1, 1, 1);
 		public static readonly Color Red = new Color(1, 0, 0, 1);
@@ -40,7 +40,7 @@ namespace Com.Surbon.GDUtils
 			return new Color(r, color.g, color.b, color.a);
 		}
 
-		public static Color SetVisible(Color color, bool isVisible)
+		public static Color SetVisible(Color color, bool isVisible = true)
 		{
 			return SetAlpha(color, isVisible ? 1f : 0f);
 		}
