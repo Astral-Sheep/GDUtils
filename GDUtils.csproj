@@ -1,8 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Com.Surbon.GDUtils</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\thoma\Documents\tools\GDUtils\GDUtils.xml</DocumentationFile>
+    <OutputPath>bin\Release\netcoreapp3.1\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
