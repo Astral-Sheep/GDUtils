@@ -4,6 +4,9 @@ using Godot;
 
 namespace Com.Surbon.GDUtils.Node
 {
+	/// <summary>
+	/// Provides tools for <see cref="Node2D"/>
+	/// </summary>
 	public static class Node2DT
 	{
 		/// <summary>
@@ -32,6 +35,11 @@ namespace Com.Surbon.GDUtils.Node
 				Position += velocity * pDelta;
 			}
 
+			/// <summary>
+			/// Computes the velocity with the given direction.
+			/// </summary>
+			/// <param name="pDirection">The direction of the movement clamped between 0 and 1.</param>
+			/// <param name="pDelta">The delta time in seconds.</param>
 			protected virtual void ComputeVelocity(Vector2 pDirection, float pDelta)
 			{
 				pDirection = VectorT.ClampLength(pDirection, 0, 1);
@@ -94,7 +102,8 @@ namespace Com.Surbon.GDUtils.Node
 			}
 
 			/// <summary>
-			/// Equivalent to the <see cref="KinematicBody2D"/> method <see cref="KinematicBody2D.MoveAndSlide"/> but for <see cref="KinematicMobile2D"/>.
+			/// Equivalent to the <see cref="KinematicBody2D"/> method <see cref="KinematicBody2D.MoveAndSlide"/> but for <see cref="KinematicMobile2D"/>
+			/// (should be used in <see cref="_Process"/> instead of <see cref="_PhysicsProcess"/>).
 			/// </summary>
 			/// <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
 			/// <param name="pDelta">The delta time in seconds.</param>
