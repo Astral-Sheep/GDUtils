@@ -1,8 +1,10 @@
-﻿using Godot;
-using System;
+﻿using System;
 
 namespace Com.Surbon.GDUtils.StateMachines
 {
+	/// <summary>
+	/// Default game object extending from <see cref="Godot.Node"/>.
+	/// </summary>
 	public class GameObject : Godot.Node, IStateMachine
 	{
 		protected Action<float> DoAction;

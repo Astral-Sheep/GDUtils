@@ -1,5 +1,8 @@
 ﻿namespace Com.Surbon.GDUtils.Node
 {
+	/// <summary>
+	/// Provides tools for <see cref="Godot.Node"/>
+	/// </summary>
 	public static class NodeT
 	{
 		/// <summary>

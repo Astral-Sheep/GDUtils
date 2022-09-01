@@ -2,6 +2,9 @@
 
 namespace Com.Surbon.GDUtils.Math
 {
+	/// <summary>
+	/// Provides static methods for <see cref="Vector2"/> and <see cref="Vector3"/> functions.
+	/// </summary>
 	public static class VectorT
 	{
 		/// <summary>
