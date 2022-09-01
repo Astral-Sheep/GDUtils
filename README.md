@@ -1,4 +1,4 @@
-This project will contain tools to help people on Godot engine.
+This project will contain tools to help people programming with Godot engine.
 
 Installation:
 - compile the project
