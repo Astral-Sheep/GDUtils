@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.Math
 {
+	/// <summary>
+	/// Provides static methods generate random numbers.
+	/// </summary>
 	public static class RandomT
 	{
 		private static RandomNumberGenerator inclusiveGenerator;
