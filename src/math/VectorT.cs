@@ -311,6 +311,22 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
+		/// Returns the vector with its values set to the given power.
+		/// </summary>
+		public static Vector2 Pow(Vector2 vector, float pow)
+		{
+			return new Vector2(Mathf.Pow(vector.x, pow), Mathf.Pow(vector.y, pow));
+		}
+
+		/// <summary>
+		/// Returns the vector with its values set to the given power.
+		/// </summary>
+		public static Vector3 Pow(Vector3 vector, float pow)
+		{
+			return new Vector3(Mathf.Pow(vector.x, pow), Mathf.Pow(vector.y, pow), Mathf.Pow(vector.z, pow));
+		}
+
+		/// <summary>
 		/// Returns the cartesian coordinates of the <see cref="Vector3"/> given in spheric coordinates
 		/// </summary>
 		/// <param name="vector">Spheric coordinates as (rho, phi, th)</param>

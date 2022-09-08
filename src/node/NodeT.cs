@@ -1,10 +1,8 @@
-﻿using Godot;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Com.Surbon.GDUtils.Node
+﻿namespace Com.Surbon.GDUtils.Node
 {
+	/// <summary>
+	/// Provides tools for <see cref="Godot.Node"/>
+	/// </summary>
 	public static class NodeT
 	{
 		/// <summary>

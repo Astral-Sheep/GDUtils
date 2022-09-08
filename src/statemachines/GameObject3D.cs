@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.StateMachines
 {
+	/// <summary>
+	/// 3D game object extending from <see cref="Spatial"/>.
+	/// </summary>
 	public class GameObject3D : Spatial, IStateMachine
 	{
 		protected Action<float> DoAction;
