@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.Math
 {
+	/// <summary>
+	/// Contains static methods to get random <see cref="float"/> and <see cref="int"/>.
+	/// </summary>
 	public static class RandomT
 	{
 		private static RandomNumberGenerator inclusiveGenerator;
@@ -16,7 +19,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns a random number between min and max ([min, max[).
+		/// Returns a random <see cref="float"/> between min and max ([min, max[).
 		/// </summary>
 		public static float RandfExclusive(float min = 0, float max = 1)
 		{
@@ -24,7 +27,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns a random number between min and max ([min, max]).
+		/// Returns a random <see cref="float"/> between min and max ([min, max]).
 		/// </summary>
 		public static float RandfInclusive(float min = 0, float max = 1)
 		{
@@ -32,17 +35,17 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns a random integer between min and min ([min, max[).
+		/// Returns a random <see cref="int"/> between min and min ([min, max[).
 		/// </summary>
-		public static float RandiExclusive(int min = 0, int max = 1)
+		public static int RandiExclusive(int min = 0, int max = 1)
 		{
 			return exclusiveGenerator.Next(min, max);
 		}
 
 		/// <summary>
-		/// Returns a random integer between min and min ([min, max]).
+		/// Returns a random <see cref="int"/> between min and min ([min, max]).
 		/// </summary>
-		public static float RandiInclusive(int min = 0, int max = 1)
+		public static int RandiInclusive(int min = 0, int max = 1)
 		{
 			return inclusiveGenerator.RandiRange(min, max);
 		}
