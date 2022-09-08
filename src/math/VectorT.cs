@@ -144,6 +144,14 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
+		/// Returns the cross product of a and b.
+		/// </summary>
+		public static Vector3 Cross(Vector2 a, Vector2 b)
+		{
+			return new Vector3(0, 0, a.Cross(b));
+		}
+
+		/// <summary>
 		/// Returns the cartesian coordinates of the vector given in cylindric coordinates
 		/// </summary>
 		/// <param name="vector">Cylindric coordinates as (r, phi, z)</param>
