@@ -6,7 +6,7 @@
 	public static class NodeT
 	{
 		/// <summary>
-		/// Disable the process of the node and all its children.
+		/// Disable the process of the <see cref="Godot.Node"/> and all its children.
 		/// </summary>
 		public static void DisableProcess(Godot.Node node)
 		{
@@ -14,7 +14,7 @@
 		}
 
 		/// <summary>
-		/// Enable the process of the node and all its children.
+		/// Enable the process of the <see cref="Godot.Node"/> and all its children.
 		/// </summary>
 		public static void EnableProcess(Godot.Node node)
 		{
@@ -22,7 +22,7 @@
 		}
 
 		/// <summary>
-		/// Returns the nth parent of the given node, or a null instance if the node lacks parent. It returns the node's highest parent if it is below n.
+		/// Returns the nth parent of the given <see cref="Godot.Node"/>, or a null instance if the <see cref="Godot.Node"/> lacks parent. It returns the <see cref="Godot.Node"/>'s highest parent if it is below n.
 		/// </summary>
 		public static Godot.Node GetParent(Godot.Node node, int n)
 		{
@@ -44,7 +44,7 @@
 		}
 
 		/// <summary>
-		/// Returns the nth parent of the given node, or a null instance if the node lacks parent or its highest parent is below n.
+		/// Returns the nth parent of the given <see cref="Godot.Node"/>, or a null instance if the <see cref="Godot.Node"/> lacks parent or its highest parent is below n.
 		/// </summary>
 		public static T GetParent<T>(Godot.Node node, int n) where T: Godot.Node
 		{
@@ -64,7 +64,7 @@
 		}
 
 		/// <summary>
-		/// Sets the process of the given node and all its children to the given boolean.
+		/// Sets the <see cref="Godot.Node._Process"/> of the given <see cref="Godot.Node"/> and all its children to the given <see cref="bool"/>.
 		/// </summary>
 		private static void SetProcess(Godot.Node node, bool isProcessing)
 		{
