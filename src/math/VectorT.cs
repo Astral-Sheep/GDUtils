@@ -3,12 +3,12 @@
 namespace Com.Surbon.GDUtils.Math
 {
 	/// <summary>
-	/// Provides static methods for <see cref="Vector2"/> and <see cref="Vector3"/> functions.
+	/// Contains static methods for <see cref="Vector2"/> and <see cref="Vector3"/>
 	/// </summary>
 	public static class VectorT
 	{
 		/// <summary>
-		 /// Returns the cylindric coordinates of the vector from the cartesian coordinates
+		 /// Returns the cylindric coordinates of the <see cref="Vector3"/> from the cartesian coordinates
 		 /// </summary>
 		 /// <param name="vector">Cartesian coordinates as (x, y, z)</param>
 		 /// <returns>Cylindric coordinates as (r, phi, z)</returns>
@@ -20,7 +20,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cylindric coordinates of the vector given in cartesian coordinates
+		/// Returns the cylindric coordinates of the <see cref="Vector3"/> given in cartesian coordinates
 		/// </summary>
 		/// <param name="x">Cartesian coordinate x</param>
 		/// <param name="y">Cartesian coordinate y</param>
@@ -34,7 +34,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the polar coordinates of the vector given in cartesian coordinates
+		/// Returns the polar coordinates of the <see cref="Vector2"/> given in cartesian coordinates
 		/// </summary>
 		/// <param name="vector">Cartesian coordinates as (x, y)</param>
 		/// <returns>Polar coordinates as (r, th)</returns>
@@ -44,7 +44,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the polar coordinates of the vector given in cartesian coordinates
+		/// Returns the polar coordinates of the <see cref="Vector2"/> given in cartesian coordinates
 		/// </summary>
 		/// <returns>Polar coordinates as (r, th)</returns>
 		public static Vector2 CartesianToPolar(float x, float y)
@@ -53,7 +53,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the spheric coordinates of the vector from the cartesian coordinates
+		/// Returns the spheric coordinates of the <see cref="Vector3"/> from the cartesian coordinates
 		/// </summary>
 		/// <param name="vector">Cartesian coordinates as (x, y, z)</param>
 		/// <returns>Spheric coordinates as (rho, phi, th)</returns>
@@ -67,7 +67,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the spheric coordinates of the vector from the cartesian coordinates
+		/// Returns the spheric coordinates of the <see cref="Vector3"/> from the cartesian coordinates
 		/// </summary>
 		/// <param name="x">Cartesian coordinate x</param>
 		/// <param name="y">Cartesian coordinate y</param>
@@ -84,7 +84,7 @@ namespace Com.Surbon.GDUtils.Math
 
 
 		/// <summary>
-		/// Set the length of the vector between the given min and max.
+		/// Set the length of the <see cref="Vector2"/> between the given min and max.
 		/// </summary>
 		public static Vector2 ClampLength(Vector2 vector, float min, float max)
 		{
@@ -96,7 +96,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Set the length of the vector between the given min and max.
+		/// Set the length of the <see cref="Vector3"/> between the given min and max.
 		/// </summary>
 		public static Vector3 ClampLength(Vector3 vector, float min, float max)
 		{
@@ -108,7 +108,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Sets the values of the vector between the given min and max.
+		/// Sets the values of the <see cref="Vector2"/> between the given min and max.
 		/// </summary>
 		public static Vector2 ClampValues(Vector2 vector, float minX, float maxX, float minY, float maxY)
 		{
@@ -119,7 +119,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Sets the values of the vector between the given min and max.
+		/// Sets the values of the <see cref="Vector3"/> between the given min and max.
 		/// </summary>
 		public static Vector3 ClampValues(Vector3 vector, float minX, float maxX, float minY, float maxY, float minZ, float maxZ)
 		{
@@ -131,7 +131,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Sets the values of the vector between the given min and max.
+		/// Sets the values of the <see cref="Vector2"/> between the given min and max.
 		/// </summary>
 		public static Vector2 ClampValuesUniform(Vector2 vector, float min, float max)
 		{
@@ -139,7 +139,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Sets the values of the vector between the given min and max.
+		/// Sets the values of the <see cref="Vector3"/> between the given min and max.
 		/// </summary>
 		public static Vector3 ClampValuesUniform(Vector3 vector, float min, float max)
 		{
@@ -147,7 +147,15 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in cylindric coordinates
+		/// Returns the cross product of a and b.
+		/// </summary>
+		public static Vector3 Cross(Vector2 a, Vector2 b)
+		{
+			return new Vector3(0, 0, a.Cross(b));
+		}
+
+		/// <summary>
+		/// Returns the cartesian coordinates of the <see cref="Vector3"/> given in cylindric coordinates
 		/// </summary>
 		/// <param name="vector">Cylindric coordinates as (r, phi, z)</param>
 		/// <returns>Cartesian coordinates as (x, y, z)</returns>
@@ -159,7 +167,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in cylindric coordinates
+		/// Returns the cartesian coordinates of the <see cref="Vector3"/> given in cylindric coordinates
 		/// </summary>
 		/// <param name="r">Polar radius</param>
 		/// <param name="phi">Azimuth angle</param>
@@ -173,7 +181,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the spheric coordinates of the vector given in cylindric coordinates
+		/// Returns the spheric coordinates of the <see cref="Vector3"/> given in cylindric coordinates
 		/// </summary>
 		/// <param name="vector">Cylindric coordinates as (r, phi, z)</param>
 		/// <returns>Spheric coordinates as (rho, phi, th)</returns>
@@ -187,7 +195,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the spheric coordinates of the vector given in cylindric coordinates
+		/// Returns the spheric coordinates of the <see cref="Vector3"/> given in cylindric coordinates
 		/// </summary>
 		/// <param name="r">Polar radius</param>
 		/// <param name="phi">Azimuth angle</param>
@@ -211,7 +219,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates to vectors by a normalized value.
+		/// Linearly interpolates two <see cref="Vector2"/> by a normalized <see cref="float"/>.
 		/// </summary>
 		public static Vector2 Lerp(Vector2 from, Vector2 to, float weight)
 		{
@@ -219,7 +227,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates to vectors by a normalized value.
+		/// Linearly interpolates two <see cref="Vector3"/> by a normalized <see cref="float"/>.
 		/// </summary>
 		public static Vector3 Lerp(Vector3 from, Vector3 to, float weight)
 		{
@@ -227,7 +235,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates two vectors by a normalized random value.
+		/// Linearly interpolates two <see cref="Vector2"/> by a normalized random <see cref="float"/>.
 		/// </summary>
 		public static Vector2 LerpRand(Vector2 from, Vector2 to)
 		{
@@ -235,7 +243,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates two vectors by a normalized random value.
+		/// Linearly interpolates two <see cref="Vector3"/> by a normalized random <see cref="float"/>.
 		/// </summary>
 		public static Vector3 LerpRand(Vector3 from, Vector3 to)
 		{
@@ -243,7 +251,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates two vectors by the given value.
+		/// Linearly interpolates two <see cref="Vector2"/> by the given <see cref="float"/>.
 		/// </summary>
 		public static Vector2 LerpUnclamped(Vector2 from, Vector2 to, float weight)
 		{
@@ -254,7 +262,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates two vectors by the given value.
+		/// Linearly interpolates two <see cref="Vector3"/> by the given <see cref="float"/>.
 		/// </summary>
 		public static Vector3 LerpUnclamped(Vector3 from, Vector3 to, float weight)
 		{
@@ -266,7 +274,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Normalize the length of the vector to the given length.
+		/// Normalize the length of the <see cref="Vector2"/> to the given length.
 		/// </summary>
 		public static Vector2 Normalize(Vector2 vector, float length = 1)
 		{
@@ -274,7 +282,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Normalize the length of the vector to the given length.
+		/// Normalize the length of the <see cref="Vector3"/> to the given length.
 		/// </summary>
 		public static Vector3 Normalize(Vector3 vector, float length = 1)
 		{
@@ -282,7 +290,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in polar coordinates
+		/// Returns the cartesian coordinates of the <see cref="Vector2"/> given in polar coordinates
 		/// </summary>
 		/// <param name="vector">Polar coordinates as (r, th)</param>
 		/// <returns>Cartesian coordinates as (x, y)</returns>
@@ -292,7 +300,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in polar coordinates
+		/// Returns the cartesian coordinates of the <see cref="Vector2"/> given in polar coordinates
 		/// </summary>
 		/// <param name="r">Radius</param>
 		/// <param name="th">Angle</param>
@@ -303,7 +311,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the vector with its values set to the given power.
+		/// Returns the <see cref="Vector2"/> with its values set to the power of the given <see cref="float"/>.
 		/// </summary>
 		public static Vector2 Pow(Vector2 vector, float pow)
 		{
@@ -311,7 +319,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the vector with its values set to the given power.
+		/// Returns the <see cref="Vector3"/> with its values set to the power of the given <see cref="float"/>.
 		/// </summary>
 		public static Vector3 Pow(Vector3 vector, float pow)
 		{
@@ -319,7 +327,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in spheric coordinates
+		/// Returns the cartesian coordinates of the <see cref="Vector3"/> given in spheric coordinates
 		/// </summary>
 		/// <param name="vector">Spheric coordinates as (rho, phi, th)</param>
 		/// <returns>Cartesian coordinates as (x, y, z)</returns>
@@ -333,7 +341,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cartesian coordinates of the vector given in spheric coordinates
+		/// Returns the cartesian coordinates of the <see cref="Vector3"/> given in spheric coordinates
 		/// </summary>
 		/// <param name="rho">Spheric radius</param>
 		/// <param name="phi">Azimuth angle</param>
@@ -349,7 +357,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cylindric coordinates of the vector given in spheric coordinates
+		/// Returns the cylindric coordinates of the <see cref="Vector3"/> given in spheric coordinates
 		/// </summary>
 		/// <param name="vector">Spheric coordinates as (rho, phi, th)</param>
 		/// <returns>Cylindric coordinates as (r, phi, z)</returns>
@@ -363,7 +371,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the cylindric coordinates of the vector given in spheric coordinates
+		/// Returns the cylindric coordinates of the <see cref="Vector3"/> given in spheric coordinates
 		/// </summary>
 		/// <param name="rho">Spheric radius</param>
 		/// <param name="phi">Azimuth angle</param>

@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GDUtils</name>
+    </assembly>
+    <members>
+        <member name="T:Com.Surbon.GDUtils.ColorT">
+            <summary>
+            Provides constants and static methods for Color.
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.None">
+            <summary>
+            Litteraly no color : (0, 0, 0, 0).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Black">
+            <summary>
+            Black : (0, 0, 0, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.White">
+            <summary>
+            White : (1, 1, 1, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Red">
+            <summary>
+            Red : (1, 0, 0, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Yellow">
+            <summary>
+            Yellow : (1, 1, 0, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Green">
+            <summary>
+            Green : (0, 1, 0, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Cyan">
+            <summary>
+            Cyan : (0, 1, 1, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Blue">
+            <summary>
+            Blue : (0, 0, 1, 1).
+            </summary>
+        </member>
+        <member name="F:Com.Surbon.GDUtils.ColorT.Pink">
+            <summary>
+            Pink : (1, 0, 1, 1).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.GetGray(Godot.Color)">
+            <summary>
+            Returns the tint of gray corresponding to the given color.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.SetAlpha(Godot.Color,System.Single)">
+            <summary>
+            Sets the alpha property of the given color.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.SetBlue(Godot.Color,System.Single)">
+            <summary>
+            Sets the blue property of the given color.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.SetGreen(Godot.Color,System.Single)">
+            <summary>
+            Sets the green property of the given color.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.SetRed(Godot.Color,System.Single)">
+            <summary>
+            Sets the red property of the given color.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.ColorT.SetVisible(Godot.Color,System.Boolean)">
+            <summary>
+            Sets the alpha of the given color to 1 if isVisible is true or to 0.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Math.MathT">
+            <summary>
+            Provides static methods for mathematical functions.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.EuclidianQuotient(System.Single,System.Single)">
+            <summary>
+            Returns the euclidian quotient of a / b.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.EuclidianRemainder(System.Single,System.Single)">
+            <summary>
+            Returns the euclidian remainder of a / b.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.EuclidianRemainder(System.Int32,System.Int32)">
+            <summary>
+            Returns the euclidian remainder of a / b.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.Factorial(System.Int32)">
+            <summary>
+            Returns the factorial of the given number.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.LerpRand(System.Single,System.Single)">
+            <summary>
+            Linearly interpolates between to values by a random normalized ratio (between 0 and 1).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.LerpUnclamped(System.Single,System.Single,System.Single)">
+            <summary>
+            Linearly interpolates between to values by a given ratio.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.Mod(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Returns a modulo b.
+            </summary>
+            <param name="a">The dividend.</param>
+            <param name="b">The divisor.</param>
+            <param name="isPos">If true, the remainder is negative.</param>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.Mod(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Returns a modulo b.
+            </summary>
+            <param name="a">The dividend.</param>
+            <param name="b">The divisor.</param>
+            <param name="isPos">If true, the remainder is negative.</param>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.NegPow(System.Single,System.Int32)">
+            <summary>
+            Returns a to the power of -b.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.NRoot(System.Single,System.Single)">
+            <summary>
+            Returns the nth root of the given number.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.PosPow(System.Single,System.Int32)">
+            <summary>
+            Returns a to the power of b.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.MathT.Pow(System.Single,System.Int32)">
+            <summary>
+            Returns a to the power of b.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Math.RandomT">
+            <summary>
+            Provides static methods generate random numbers.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.RandomT.RandfExclusive(System.Single,System.Single)">
+            <summary>
+            Returns a random number between min and max ([min, max[).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.RandomT.RandfInclusive(System.Single,System.Single)">
+            <summary>
+            Returns a random number between min and max ([min, max]).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.RandomT.RandiExclusive(System.Int32,System.Int32)">
+            <summary>
+            Returns a random integer between min and min ([min, max[).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.RandomT.RandiInclusive(System.Int32,System.Int32)">
+            <summary>
+            Returns a random integer between min and min ([min, max]).
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Math.VectorT">
+            <summary>
+            Provides static methods for <see cref="T:Godot.Vector2"/> and <see cref="T:Godot.Vector3"/> functions.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToCylindric(Godot.Vector3)">
+            <summary>
+            Returns the cylindric coordinates of the vector from the cartesian coordinates
+            </summary>
+            <param name="vector">Cartesian coordinates as (x, y, z)</param>
+            <returns>Cylindric coordinates as (r, phi, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToCylindric(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the cylindric coordinates of the vector given in cartesian coordinates
+            </summary>
+            <param name="x">Cartesian coordinate x</param>
+            <param name="y">Cartesian coordinate y</param>
+            <param name="z">Cartesian coordinate z</param>
+            <returns>Cylindric coordinates as (r, phi, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToPolar(Godot.Vector2)">
+            <summary>
+            Returns the polar coordinates of the vector given in cartesian coordinates
+            </summary>
+            <param name="vector">Cartesian coordinates as (x, y)</param>
+            <returns>Polar coordinates as (r, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToPolar(System.Single,System.Single)">
+            <summary>
+            Returns the polar coordinates of the vector given in cartesian coordinates
+            </summary>
+            <returns>Polar coordinates as (r, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToSpheric(Godot.Vector3)">
+            <summary>
+            Returns the spheric coordinates of the vector from the cartesian coordinates
+            </summary>
+            <param name="vector">Cartesian coordinates as (x, y, z)</param>
+            <returns>Spheric coordinates as (rho, phi, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CartesianToSpheric(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the spheric coordinates of the vector from the cartesian coordinates
+            </summary>
+            <param name="x">Cartesian coordinate x</param>
+            <param name="y">Cartesian coordinate y</param>
+            <param name="z">Cartesian coordinate z</param>
+            <returns>Spheric coordinates as (rho, phi, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampLength(Godot.Vector2,System.Single,System.Single)">
+            <summary>
+            Set the length of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampLength(Godot.Vector3,System.Single,System.Single)">
+            <summary>
+            Set the length of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampValues(Godot.Vector2,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the values of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampValues(Godot.Vector3,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the values of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampValuesUniform(Godot.Vector2,System.Single,System.Single)">
+            <summary>
+            Sets the values of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.ClampValuesUniform(Godot.Vector3,System.Single,System.Single)">
+            <summary>
+            Sets the values of the vector between the given min and max.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CylindricToCartesian(Godot.Vector3)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in cylindric coordinates
+            </summary>
+            <param name="vector">Cylindric coordinates as (r, phi, z)</param>
+            <returns>Cartesian coordinates as (x, y, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CylindricToCartesian(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in cylindric coordinates
+            </summary>
+            <param name="r">Polar radius</param>
+            <param name="phi">Azimuth angle</param>
+            <param name="z">Cartesian coordinate z</param>
+            <returns>Cartesian coordinates as (x, y, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CylindricToSpheric(Godot.Vector3)">
+            <summary>
+            Returns the spheric coordinates of the vector given in cylindric coordinates
+            </summary>
+            <param name="vector">Cylindric coordinates as (r, phi, z)</param>
+            <returns>Spheric coordinates as (rho, phi, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.CylindricToSpheric(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the spheric coordinates of the vector given in cylindric coordinates
+            </summary>
+            <param name="r">Polar radius</param>
+            <param name="phi">Azimuth angle</param>
+            <param name="z">Cartesian coordinate z</param>
+            <returns>Spheric coordinates as (rho, phi, th)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.GetSlope(Godot.Vector2,Godot.Vector2)">
+            <summary>
+            Returns the slope of the line passing by from and to.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Lerp(Godot.Vector2,Godot.Vector2,System.Single)">
+            <summary>
+            Linearly interpolates to vectors by a normalized value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Lerp(Godot.Vector3,Godot.Vector3,System.Single)">
+            <summary>
+            Linearly interpolates to vectors by a normalized value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.LerpRand(Godot.Vector2,Godot.Vector2)">
+            <summary>
+            Linearly interpolates two vectors by a normalized random value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.LerpRand(Godot.Vector3,Godot.Vector3)">
+            <summary>
+            Linearly interpolates two vectors by a normalized random value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.LerpUnclamped(Godot.Vector2,Godot.Vector2,System.Single)">
+            <summary>
+            Linearly interpolates two vectors by the given value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.LerpUnclamped(Godot.Vector3,Godot.Vector3,System.Single)">
+            <summary>
+            Linearly interpolates two vectors by the given value.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Normalize(Godot.Vector2,System.Single)">
+            <summary>
+            Normalize the length of the vector to the given length.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Normalize(Godot.Vector3,System.Single)">
+            <summary>
+            Normalize the length of the vector to the given length.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.PolarToCartesian(Godot.Vector2)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in polar coordinates
+            </summary>
+            <param name="vector">Polar coordinates as (r, th)</param>
+            <returns>Cartesian coordinates as (x, y)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.PolarToCartesian(System.Single,System.Single)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in polar coordinates
+            </summary>
+            <param name="r">Radius</param>
+            <param name="th">Angle</param>
+            <returns>Cartesian coordinates as (x, y)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Pow(Godot.Vector2,System.Single)">
+            <summary>
+            Returns the vector with its values set to the given power.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.Pow(Godot.Vector3,System.Single)">
+            <summary>
+            Returns the vector with its values set to the given power.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.SphericToCartesian(Godot.Vector3)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in spheric coordinates
+            </summary>
+            <param name="vector">Spheric coordinates as (rho, phi, th)</param>
+            <returns>Cartesian coordinates as (x, y, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.SphericToCartesian(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the cartesian coordinates of the vector given in spheric coordinates
+            </summary>
+            <param name="rho">Spheric radius</param>
+            <param name="phi">Azimuth angle</param>
+            <param name="th">Polar angle</param>
+            <returns>Cartesian coordinates as (x, y, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.SphericToCylindric(Godot.Vector3)">
+            <summary>
+            Returns the cylindric coordinates of the vector given in spheric coordinates
+            </summary>
+            <param name="vector">Spheric coordinates as (rho, phi, th)</param>
+            <returns>Cylindric coordinates as (r, phi, z)</returns>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Math.VectorT.SphericToCylindric(System.Single,System.Single,System.Single)">
+            <summary>
+            Returns the cylindric coordinates of the vector given in spheric coordinates
+            </summary>
+            <param name="rho">Spheric radius</param>
+            <param name="phi">Azimuth angle</param>
+            <param name="th">Polar angle</param>
+            <returns>Cylindric coordinates as (r, phi, z)</returns>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Node.Node2DT">
+            <summary>
+            Provides tools for <see cref="T:Godot.Node2D"/>
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Node.Node2DT.Mobile2D">
+            <summary>
+            Mobile 2D object (useful description isn't it).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.Mobile2D.Move(Godot.Vector2,System.Single)">
+            <summary>
+            Moves the instance in the given direction.
+            </summary>
+            <param name="pDirection">The direction of the movement clamped between 0 and 1.</param>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.Mobile2D.ComputeVelocity(Godot.Vector2,System.Single)">
+            <summary>
+            Computes the velocity with the given direction.
+            </summary>
+            <param name="pDirection">The direction of the movement clamped between 0 and 1.</param>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D">
+            <summary>
+            Mobile object with a child <see cref="T:Godot.KinematicBody2D"/> to collide. Use method <see cref="M:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D.GetBody"/> to access it.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D.GetBody">
+            <summary>
+            Returns the <see cref="T:Godot.KinematicBody2D"/> used for collisions.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D.MoveAndCollide(Godot.Vector2,System.Single)">
+            <summary>
+            Equivalent to the <see cref="T:Godot.KinematicBody2D"/> method <see cref="M:Godot.KinematicBody2D.MoveAndCollide(Godot.Vector2,System.Boolean,System.Boolean,System.Boolean)"/> but for <see cref="T:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D"/>.
+            </summary>
+            <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D.MoveAndSlide(Godot.Vector2,System.Single)">
+            <summary>
+            Equivalent to the <see cref="T:Godot.KinematicBody2D"/> method <see cref="M:Godot.KinematicBody2D.MoveAndSlide(Godot.Vector2,System.Nullable{Godot.Vector2},System.Boolean,System.Int32,System.Single,System.Boolean)"/> but for <see cref="T:Com.Surbon.GDUtils.Node.Node2DT.KinematicMobile2D"/>
+            (should be used in <see cref="!:_Process"/> instead of <see cref="!:_PhysicsProcess"/>).
+            </summary>
+            <param name="pDirection">The vector corresponding to the direction of the movement (clamped between 0 and 1).</param>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Node.Node2DT.AreaMobile2D">
+            <summary>
+            Mobile object with a child <see cref="T:Godot.Area2D"/> to collide. Use method <see cref="M:Com.Surbon.GDUtils.Node.Node2DT.AreaMobile2D.GetBody"/> to access it.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.Node2DT.AreaMobile2D.GetBody">
+            <summary>
+            Returns the Area2D used for collisions.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.Node.NodeT">
+            <summary>
+            Provides tools for <see cref="T:Godot.Node"/>
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.NodeT.DisableProcess(Godot.Node)">
+            <summary>
+            Disable the process of the node and all its children.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.NodeT.EnableProcess(Godot.Node)">
+            <summary>
+            Enable the process of the node and all its children.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.NodeT.GetParent(Godot.Node,System.Int32)">
+            <summary>
+            Returns the nth parent of the given node, or a null instance if the node lacks parent. It returns the node's highest parent if it is below n.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.NodeT.GetParent``1(Godot.Node,System.Int32)">
+            <summary>
+            Returns the nth parent of the given node, or a null instance if the node lacks parent or its highest parent is below n.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.Node.NodeT.SetProcess(Godot.Node,System.Boolean)">
+            <summary>
+            Sets the process of the given node and all its children to the given boolean.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.StateMachines.GameObject">
+            <summary>
+            Default game object extending from <see cref="T:Godot.Node"/>.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.StateMachines.GameObject2D">
+            <summary>
+            2D game object extending from <see cref="T:Godot.Node2D"/>.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.StateMachines.GameObject3D">
+            <summary>
+            3D game object extending from <see cref="T:Godot.Spatial"/>.
+            </summary>
+        </member>
+        <member name="T:Com.Surbon.GDUtils.StateMachines.IStateMachine">
+            <summary>
+            Interface corresponding to a basic state machine.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.StateMachines.IStateMachine.Start">
+            <summary>
+            Start the instance (by default it's supposed to be equivalent to SetModeNormal).
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.StateMachines.IStateMachine.SetModeVoid">
+            <summary>
+            Set DoAction to DoActionVoid.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.StateMachines.IStateMachine.SetModeNormal">
+            <summary>
+            Set DoAction to DoActionNormal.
+            </summary>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.StateMachines.IStateMachine.DoActionVoid(System.Single)">
+            <summary>
+            Do nothing (by default).
+            </summary>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+        <member name="M:Com.Surbon.GDUtils.StateMachines.IStateMachine.DoActionNormal(System.Single)">
+            <summary>
+            Do the default action.
+            </summary>
+            <param name="pDelta">The delta time in seconds.</param>
+        </member>
+    </members>
+</doc>
