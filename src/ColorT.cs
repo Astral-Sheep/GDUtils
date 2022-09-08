@@ -45,7 +45,7 @@ namespace Com.Surbon.GDUtils
 		public static readonly Color Pink = new Color(1, 0, 1, 1);
 		
 		/// <summary>
-		/// Returns the tint of gray corresponding to the given color.
+		/// Returns the tint of gray corresponding to the given <see cref="Color"/>.
 		/// </summary>
 		public static Color GetGray(Color color)
 		{
@@ -54,7 +54,7 @@ namespace Com.Surbon.GDUtils
 		}
 
 		/// <summary>
-		/// Sets the alpha property of the given color.
+		/// Sets the alpha property (<see cref="Color.a"/>) of the given <see cref="Color"/>.
 		/// </summary>
 		public static Color SetAlpha(Color color, float a)
 		{
@@ -62,7 +62,7 @@ namespace Com.Surbon.GDUtils
 		}
 
 		/// <summary>
-		/// Sets the blue property of the given color.
+		/// Sets the blue property (<see cref="Color.b"/>) of the given <see cref="Color"/>.
 		/// </summary>
 		public static Color SetBlue(Color color, float b)
 		{
@@ -70,7 +70,7 @@ namespace Com.Surbon.GDUtils
 		}
 
 		/// <summary>
-		/// Sets the green property of the given color.
+		/// Sets the green property (<see cref="Color.g"/>) of the given <see cref="Color"/>.
 		/// </summary>
 		public static Color SetGreen(Color color, float g)
 		{
@@ -78,7 +78,7 @@ namespace Com.Surbon.GDUtils
 		}
 
 		/// <summary>
-		/// Sets the red property of the given color.
+		/// Sets the red property (<see cref="Color.r"/>) of the given <see cref="Color"/>.
 		/// </summary>
 		public static Color SetRed(Color color, float r)
 		{
@@ -86,7 +86,7 @@ namespace Com.Surbon.GDUtils
 		}
 
 		/// <summary>
-		/// Sets the alpha of the given color to 1 if isVisible is true or to 0.
+		/// Sets the alpha property (<see cref="Color.a"/>) of the given <see cref="Color"/> to 1 if isVisible is true or to 0.
 		/// </summary>
 		public static Color SetVisible(Color color, bool isVisible = true)
 		{
