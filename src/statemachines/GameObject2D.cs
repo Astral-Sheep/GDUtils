@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.StateMachines
 {
+	/// <summary>
+	/// 2D game object extending from <see cref="Node2D"/>.
+	/// </summary>
 	public class GameObject2D : Node2D, IStateMachine
 	{
 		protected Action<float> DoAction;

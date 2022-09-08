@@ -3,6 +3,9 @@ using System;
 
 namespace Com.Surbon.GDUtils.Math
 {
+	/// <summary>
+	/// Contains static methods for mathematical operations.
+	/// </summary>
 	public static class MathT
 	{
 		/// <summary>
@@ -21,7 +24,7 @@ namespace Com.Surbon.GDUtils.Math
 		public static int EuclidianRemainder(int a, int b) => a - (a / b) * b;
 
 		/// <summary>
-		/// Returns the factorial of the given number.
+		/// Returns the factorial of the given <see cref="int"/>.
 		/// </summary>
 		public static int Factorial(int value)
 		{
@@ -39,12 +42,12 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Linearly interpolates between to values by a random normalized ratio (between 0 and 1).
+		/// Linearly interpolates between two <see cref="float"/> by a random normalized ratio (between 0 and 1).
 		/// </summary>
 		public static float LerpRand(float a, float b) => LerpUnclamped(a, b, RandomT.RandfInclusive());
 
 		/// <summary>
-		/// Linearly interpolates between to values by a given ratio.
+		/// Linearly interpolates between two <see cref="float"/> by a given ratio.
 		/// </summary>
 		public static float LerpUnclamped(float a, float b, float ratio) => a + (b - a) * ratio;
 
@@ -80,7 +83,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the nth root of the given number.
+		/// Returns the nth root of the given <see cref="float"/>.
 		/// </summary>
 		public static float NRoot(float value, float n) => Mathf.Exp((1f / n) * Mathf.Log(value));
 
