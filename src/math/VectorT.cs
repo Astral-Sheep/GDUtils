@@ -311,7 +311,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the vector with its values set to the given power.
+		/// Returns the <see cref="Vector2"/> with its values set to the power of the given <see cref="float"/>.
 		/// </summary>
 		public static Vector2 Pow(Vector2 vector, float pow)
 		{
@@ -319,7 +319,7 @@ namespace Com.Surbon.GDUtils.Math
 		}
 
 		/// <summary>
-		/// Returns the vector with its values set to the given power.
+		/// Returns the <see cref="Vector3"/> with its values set to the power of the given <see cref="float"/>.
 		/// </summary>
 		public static Vector3 Pow(Vector3 vector, float pow)
 		{
