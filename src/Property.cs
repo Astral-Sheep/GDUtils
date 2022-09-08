@@ -1,13 +1,22 @@
 ﻿namespace Com.Surbon.GDUtils
 {
+	/// <summary>
+	/// Contains constants for <see cref="Godot.Node"/> properties.
+	/// </summary>
 	public static class Property
 	{
+		/// <summary>
+		/// Contains constants for <see cref="Godot.Node"/> properties.
+		/// </summary>
 		public static class Node
 		{
 			public const string PAUSE_MODE = "pause_mode";
 			public const string PROCESS_PRIORITY = "process_priority";
 			public const string SCRIPT = "script";
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.CanvasItem"/> properties.
+			/// </summary>
 			public static class CanvasItem
 			{
 				#region VISIBILITY
@@ -27,6 +36,9 @@
 
 				#endregion MATERIAL
 
+				/// <summary>
+				/// Contains constants for <see cref="Godot.Control"/> properties.
+				/// </summary>
 				public static class Control
 				{
 					#region ANCHOR
@@ -111,6 +123,9 @@
 
 					#endregion THEME
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Popup"/> properties.
+					/// </summary>
 					public static class Popup
 					{
 						#region POPUP
@@ -119,11 +134,17 @@
 
 						#endregion POPUP
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.WindowDialog"/> properties.
+						/// </summary>
 						public static class WindowDialog
 						{
 							public const string WINDOW_TITLE = "window_title";
 							public const string RESIZABLE = "resizable";
 
+							/// <summary>
+							/// Contains constants for <see cref="Godot.AcceptDialog"/> properties.
+							/// </summary>
 							public static class AcceptDialog
 							{
 								#region DIALOG
@@ -134,6 +155,9 @@
 
 								#endregion DIALOG
 
+								/// <summary>
+								/// Contains constants for <see cref="Godot.FileDialog"/> properties.
+								/// </summary>
 								public static class FileDialog
 								{
 									public const string MODE_OVERRIDES_TITLE = "mode_overrides_title";
@@ -148,6 +172,9 @@
 							}
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.PopupMenu"/> properties.
+						/// </summary>
 						public static class PopupMenu
 						{
 							public const string HIDE_ON_ITEM_SELECTION = "hide_on_item_selection";
@@ -158,8 +185,14 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Container"/> properties.
+					/// </summary>
 					public static class Container
 					{
+						/// <summary>
+						/// Contains constants for <see cref="Godot.AspectRatioContainer"/> properties.
+						/// </summary>
 						public static class AspectRatioContainer
 						{
 							public const string RATIO = "ratio";
@@ -173,15 +206,24 @@
 							#endregion ALIGNMENT
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.CenterContainer"/> properties.
+						/// </summary>
 						public static class CenterContainer
 						{
 							public const string USE_TOP_LEFT = "use_top_left";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.BoxContainer"/> properties.
+						/// </summary>
 						public static class BoxContainer
 						{
 							public const string ALIGNMENT = "alignment";
 
+							/// <summary>
+							/// Contains constants for <see cref="Godot.ColorPicker"/> properties.
+							/// </summary>
 							public static class ColorPicker
 							{
 								public const string COLOR = "color";
@@ -194,6 +236,9 @@
 							}
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.GraphNode"/> properties.
+						/// </summary>
 						public static class GraphNode
 						{
 							public const string TITLE = "title";
@@ -205,11 +250,17 @@
 							public const string OVERLAY = "overlay";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.GridContainer"/> properties.
+						/// </summary>
 						public static class GridContainer
 						{
 							public const string COLUMNS = "columns";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.SplitContainer"/> properties.
+						/// </summary>
 						public static class SplitContainer
 						{
 							public const string SPLIT_OFFSET = "split_offset";
@@ -217,6 +268,9 @@
 							public const string DRAGGER_VISIBILITY = "dragger_visibility";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.ScrollContainer"/> properties.
+						/// </summary>
 						public static class ScrollContainer
 						{
 							public const string FOLLOW_FOCUS = "follow_focus";
@@ -232,6 +286,9 @@
 							#endregion SCROLL
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.TabContainer"/> properties.
+						/// </summary>
 						public static class TabContainer
 						{
 							public const string TAB_ALIGN = "tab_align";
@@ -242,6 +299,9 @@
 							public const string USE_HIDDEN_TABS_FOR_MIN_SIZE = "use_hidden_tabs_for_min_size";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.ViewportContainer"/> properties.
+						/// </summary>
 						public static class ViewportContainer
 						{
 							public const string STRETCH = "stretch";
@@ -249,6 +309,9 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.BaseButton"/> properties.
+					/// </summary>
 					public static class BaseButton
 					{
 						public const string DISABLED = "disabled";
@@ -262,6 +325,9 @@
 						public const string SHORTCUT = "shortcut";
 						public const string GROUP = "group";
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.Button"/> properties.
+						/// </summary>
 						public static class Button
 						{
 							public const string TEXT = "text";
@@ -271,29 +337,44 @@
 							public const string ALIGN = "align";
 							public const string EXPAND_ICON = "expand_icon";
 
+							/// <summary>
+							/// Contains constants for <see cref="Godot.ColorPickerButton"/> properties.
+							/// </summary>
 							public static class ColorPickerButton
 							{
 								public const string COLOR = "color";
 								public const string EDIT_ALPHA = "edit_alpha";
 							}
 
+							/// <summary>
+							/// Contains constants for <see cref="Godot.MenuButton"/> properties.
+							/// </summary>
 							public static class MenuButton
 							{
 								public const string SWITCH_ON_HOVER = "switch_on_hover";
 							}
 
+							/// <summary>
+							/// Contains constants for <see cref="Godot.OptionButton"/> properties.
+							/// </summary>
 							public static class OptionButton
 							{
 								public const string SELECTED = "selected";
 							}
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.LinkButton"/> properties.
+						/// </summary>
 						public static class LinkButton
 						{
 							public const string TEXT = "text";
 							public const string UNDERLINE = "underline";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.TextureButton"/> properties.
+						/// </summary>
 						public static class TextureButton
 						{
 							public const string EXPAND = "expand";
@@ -314,11 +395,17 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.ColorRect"/> properties.
+					/// </summary>
 					public static class ColorRect
 					{
 						public const string COLOR = "color";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.GraphEdit"/> properties.
+					/// </summary>
 					public static class GraphEdit
 					{
 						public const string RIGHT_DISCONNECTS = "right_disconnects";
@@ -345,6 +432,9 @@
 						#endregion MINIMAP
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Range"/> properties.
+					/// </summary>
 					public static class Range
 					{
 						public const string MIN_VALUE = "min_value";
@@ -357,11 +447,17 @@
 						public const string ALLOW_GREATER = "allow_greater";
 						public const string ALLOW_LESSER = "allow_lesser";
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.ScrollBar"/> properties.
+						/// </summary>
 						public static class ScrollBar
 						{
 							public const string CUSTOM_STEP = "custom_step";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.Slider"/> properties.
+						/// </summary>
 						public static class Slider
 						{
 							public const string EDITABLE = "editable";
@@ -370,6 +466,9 @@
 							public const string TICK_ON_BORDERS = "tick_on_borders";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.ProgressBar"/> properties.
+						/// </summary>
 						public static class ProgressBar
 						{
 							#region PERCENT
@@ -379,6 +478,9 @@
 							#endregion PERCENT
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.SpinBox"/> properties.
+						/// </summary>
 						public static class SpinBox
 						{
 							public const string ALIGN = "align";
@@ -387,6 +489,9 @@
 							public const string SUFFIX = "suffix";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.TextureProgress"/> properties.
+						/// </summary>
 						public static class TextureProgress
 						{
 							public const string FILL_MODE = "fill_mode";
@@ -423,6 +528,9 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.ItemList"/> properties.
+					/// </summary>
 					public static class ItemList
 					{
 						public const string SELECT_MODE = "select_mode";
@@ -448,6 +556,9 @@
 						#endregion ICON
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Label"/> properties.
+					/// </summary>
 					public static class Label
 					{
 						public const string TEXT = "text";
@@ -462,6 +573,9 @@
 						public const string MAX_LINES_VISIBLE = "max_lines_visible";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.LineEdit"/> properties.
+					/// </summary>
 					public static class LineEdit
 					{
 						public const string TEXT = "text";
@@ -494,6 +608,9 @@
 						#endregion CARET
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.NinePatchRect"/> properties.
+					/// </summary>
 					public static class NinePatchRect
 					{
 						public const string TEXTURE = "texture";
@@ -517,6 +634,9 @@
 						#endregion AXIS STRETCH
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.ReferenceRect"/> properties.
+					/// </summary>
 					public static class ReferenceRect
 					{
 						public const string BORDER_COLOR = "border_color";
@@ -524,6 +644,9 @@
 						public const string EDITOR_ONLY = "editor_only";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.RichTextLabel"/> properties.
+					/// </summary>
 					public static class RichTextLabel
 					{
 						public const string VISIBLE_CHARACTERS = "visible_characters";
@@ -546,6 +669,9 @@
 						#endregion BB CODE
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Tabs"/> properties.
+					/// </summary>
 					public static class Tabs
 					{
 						public const string CURRENT_TAB = "current_tab";
@@ -555,6 +681,9 @@
 						public const string DRAG_TO_REARRANGE_ENABLED = "drag_to_rearrange_enabled";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.TextEdit"/> properties.
+					/// </summary>
 					public static class TextEdit
 					{
 						public const string TEXT = "text";
@@ -597,6 +726,9 @@
 						#endregion CARET
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.TextureRect"/> properties.
+					/// </summary>
 					public static class TextureRect
 					{
 						public const string TEXTURE = "texture";
@@ -606,6 +738,9 @@
 						public const string FLIP_V = "flip_v";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Tree"/> properties.
+					/// </summary>
 					public static class Tree
 					{
 						public const string COLUMNS = "columns";
@@ -616,6 +751,9 @@
 						public const string DROP_MODE_FLAGS = "drop_mode_flags";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.VideoPlayer"/> properties.
+					/// </summary>
 					public static class VideoPlayer
 					{
 						public const string AUDIO_TRACK = "audio_track";
@@ -629,6 +767,9 @@
 					}
 				}
 
+				/// <summary>
+				/// Contains constants for <see cref="Godot.Node2D"/> properties.
+				/// </summary>
 				public static class Node2D
 				{
 					#region TRANSFORM
@@ -646,6 +787,9 @@
 
 					#endregion Z INDEX
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.AnimatedSprite"/> properties.
+					/// </summary>
 					public static class AnimatedSprite
 					{
 						public const string FRAMES = "frames";
@@ -659,6 +803,9 @@
 						public const string FLIP_V = "flip_v";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.CollisionObject2D"/> properties.
+					/// </summary>
 					public static class CollisionObject2D
 					{
 						#region COLLISION
@@ -674,6 +821,9 @@
 
 						#endregion INPUT
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.Area2D"/> properties.
+						/// </summary>
 						public static class Area2D
 						{
 							public const string MONITORING = "monitoring";
@@ -700,6 +850,9 @@
 							#endregion AUDIO BUS
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.KinematicBody2D"/> properties.
+						/// </summary>
 						public static class KinematicBody2D
 						{
 							#region COLLISION
@@ -715,6 +868,9 @@
 							#endregion MOTION
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.RigidBody2D"/> properties.
+						/// </summary>
 						public static class RigidBody2D
 						{
 							public const string MODE = "mode";
@@ -751,6 +907,9 @@
 							#endregion APPLIED FORCES
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.StaticBody2D"/> properties.
+						/// </summary>
 						public static class StaticBody2D
 						{
 							public const string CONSTANT_LINEAR_VELOCITY = "constant_linear_velocity";
@@ -759,6 +918,9 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.AudioStreamPlayer2D"/> properties.
+					/// </summary>
 					public static class AudioStreamPlayer2D
 					{
 						public const string STREAM = "stream";
@@ -773,18 +935,27 @@
 						public const string AREA_MASK = "area_mask";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.BackBufferCopy"/> properties.
+					/// </summary>
 					public static class BackBufferCopy
 					{
 						public const string COPY_MODE = "copy_mode";
 						public const string RECT = "rect";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Bone2D"/> properties.
+					/// </summary>
 					public static class Bone2D
 					{
 						public const string REST = "rest";
 						public const string DEFAULT_LENGTH = "default_length";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.CPUParticles2D"/> properties.
+					/// </summary>
 					public static class CPUParticles2D
 					{
 						public const string EMITTING = "emitting";
@@ -936,6 +1107,9 @@
 						#endregion ANIMATION
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Camera2D"/> properties.
+					/// </summary>
 					public static class Camera2D
 					{
 						public const string OFFSET = "offset";
@@ -989,11 +1163,17 @@
 						#endregion EDITOR
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.CanvasModulate"/> properties.
+					/// </summary>
 					public static class CanvasModulate
 					{
 						public const string COLOR = "color";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.CollisionPolygon2D"/> properties.
+					/// </summary>
 					public static class CollisionPolygon2D
 					{
 						public const string BUILD_MODE = "build_mode";
@@ -1003,6 +1183,9 @@
 						public const string ONE_WAY_COLLISION_MARGIN = "one_way_collision_margin";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.CollisionShape2D"/> properties.
+					/// </summary>
 					public static class CollisionShape2D
 					{
 						public const string SHAPE = "shape";
@@ -1011,6 +1194,9 @@
 						public const string ONE_WAY_COLLISION_MARGIN = "one_way_collision_margin";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Joint2D"/> properties.
+					/// </summary>
 					public static class Joint2D
 					{
 						public const string NODE_A = "node_a";
@@ -1018,6 +1204,9 @@
 						public const string BIAS = "bias";
 						public const string DISABLE_COLLISION = "disable_collision";
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.DampedSpringJoint2D"/> properties.
+						/// </summary>
 						public static class DampedSpringJoint2D
 						{
 							public const string LENGTH = "length";
@@ -1026,18 +1215,27 @@
 							public const string DAMPING = "damping";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.GrooveJoint2D"/> properties.
+						/// </summary>
 						public static class GrooveJoint2D
 						{
 							public const string LENGTH = "length";
 							public const string INITIAL_OFFSET = "initial_offset";
 						}
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.PinJoint2D"/> properties.
+						/// </summary>
 						public static class PinJoint2D
 						{
 							public const string SOFTNESS = "softness";
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Light2D"/> properties.
+					/// </summary>
 					public static class Light2D
 					{
 						public const string ENABLED = "enabled";
@@ -1073,12 +1271,18 @@
 						#endregion SHADOW
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.LightOccluder2D"/> properties.
+					/// </summary>
 					public static class LightOccluder2D
 					{
 						public const string OCCLUDER = "occluder";
 						public const string LIGHT_MASK = "light_mask";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Line2D"/> properties.
+					/// </summary>
 					public static class Line2D
 					{
 						public const string POINTS = "points";
@@ -1111,11 +1315,17 @@
 						#endregion BORDER
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Listener2D"/> properties.
+					/// </summary>
 					public static class Listener2D
 					{
 						public const string CURRENT = "current";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.MeshInstance2D"/> properties.
+					/// </summary>
 					public static class MeshInstance2D
 					{
 						public const string MESH = "mesh";
@@ -1123,6 +1333,9 @@
 						public const string NORMAL_MAP = "normal_map";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.MultiMeshInstance2D"/> properties.
+					/// </summary>
 					public static class MultiMeshInstance2D
 					{
 						public const string MULTIMESH = "multimesh";
@@ -1130,12 +1343,18 @@
 						public const string NORMAL_MAP = "normal_map";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.NavigationPolygonInstance"/> properties.
+					/// </summary>
 					public static class NavigationPolygonInstance
 					{
 						public const string NAVPOLY = "navpoly";
 						public const string ENABLED = "enabled";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.ParallaxLayer"/> properties.
+					/// </summary>
 					public static class ParallaxLayer
 					{
 						#region MOTION
@@ -1147,6 +1366,9 @@
 						#endregion MOTION
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Particles2D"/> properties.
+					/// </summary>
 					public static class Particles2D
 					{
 						public const string EMITTING = "emitting";
@@ -1187,11 +1409,17 @@
 						#endregion TEXTURES
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Path2D"/> properties.
+					/// </summary>
 					public static class Path2D
 					{
 						public const string CURVE = "curve";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.PathFollow2D"/> properties.
+					/// </summary>
 					public static class PathFollow2D
 					{
 						public const string OFFSET = "offset";
@@ -1204,6 +1432,9 @@
 						public const string LOOKAHEAD = "lookahead";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Polygon2D"/> properties.
+					/// </summary>
 					public static class Polygon2D
 					{
 						public const string COLOR = "color";
@@ -1243,11 +1474,17 @@
 						#endregion DATA
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Position2D"/> properties.
+					/// </summary>
 					public static class Position2D
 					{
 						public const string GIZMO_EXTENTS = "gizmo_extents";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.RayCast2D"/> properties.
+					/// </summary>
 					public static class RayCast2D
 					{
 						public const string ENABLED = "enabled";
@@ -1263,6 +1500,9 @@
 						#endregion COLLIDE WITH
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.RemoteTransform2D"/> properties.
+					/// </summary>
 					public static class RemoteTransform2D
 					{
 						public const string REMOTE_PATH = "remote_path";
@@ -1277,6 +1517,9 @@
 						#endregion UPDATE
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.Sprite"/> properties.
+					/// </summary>
 					public static class Sprite
 					{
 						public const string TEXTURE = "texture";
@@ -1309,6 +1552,9 @@
 						#endregion REGION
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.TileMap"/> properties.
+					/// </summary>
 					public static class TileMap
 					{
 						public const string MODE = "mode";
@@ -1347,6 +1593,9 @@
 						#endregion OCCLUDER
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.TouchScreenButton"/> properties.
+					/// </summary>
 					public static class TouchScreenButton
 					{
 						public const string NORMAL = "normal";
@@ -1360,10 +1609,16 @@
 						public const string VISIBILITY_MODE = "visibility_mode";
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.VisibilityNotifier2D"/> properties.
+					/// </summary>
 					public static class VisibilityNotifier2D
 					{
 						public const string RECT = "rect";
 
+						/// <summary>
+						/// Contains constants for <see cref="Godot.VisibilityEnabler2D"/> properties.
+						/// </summary>
 						public static class VisibilityEnabler2D
 						{
 							public const string PAUSE_ANIMATIONS = "pause_animations";
@@ -1375,6 +1630,9 @@
 						}
 					}
 
+					/// <summary>
+					/// Contains constants for <see cref="Godot.YSort"/> properties.
+					/// </summary>
 					public static class YSort
 					{
 						public const string SORT_ENABLED = "sort_enabled";
@@ -1382,6 +1640,9 @@
 				}
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.AnimationPlayer"/> properties.
+			/// </summary>
 			public static class AnimationPlayer
 			{
 				public const string ROOT_NODE = "root_node";
@@ -1398,6 +1659,9 @@
 				#endregion PLAYBACK OPTIONS
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.AnimationTree"/> properties.
+			/// </summary>
 			public static class AnimationTree
 			{
 				public const string TREE_ROOT = "tree_root";
@@ -1407,6 +1671,9 @@
 				public const string ROOT_MOTION_TRACK = "root_motion_track";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.AnimationTreePlayer"/> properties.
+			/// </summary>
 			public static class AnimationTreePlayer
 			{
 				public const string MASTER_PLAYER = "master_player";
@@ -1415,6 +1682,9 @@
 				public const string PLAYBACK_PROCESS_MODE = "playback_process_mode";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.AudioStreamPlayer"/> properties.
+			/// </summary>
 			public static class AudioStreamPlayer
 			{
 				public const string STREAM = "stream";
@@ -1427,6 +1697,9 @@
 				public const string BUS = "bus";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.CanvasLayer"/> properties.
+			/// </summary>
 			public static class CanvasLayer
 			{
 				#region LAYER
@@ -1451,6 +1724,9 @@
 
 				#endregion FOLLOW_VIEWPORT
 
+				/// <summary>
+				/// Contains constants for <see cref="Godot.ParallaxBackground"/> properties.
+				/// </summary>
 				public static class ParallaxBackground
 				{
 					public const string SCROLL_OFFSET = "scroll_offset";
@@ -1462,6 +1738,9 @@
 				}
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.HTTPRequest"/> properties.
+			/// </summary>
 			public static class HTTPRequest
 			{
 				public const string DOWNLOAD_FILE = "download_file";
@@ -1472,6 +1751,9 @@
 				public const string TIMEOUT = "timeout";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.SkeletonIK"/> properties.
+			/// </summary>
 			public static class SkeletonIK
 			{
 				public const string ROOT_BONE = "root_bone";
@@ -1486,6 +1768,9 @@
 				public const string MAX_ITERATIONS = "max_iterations";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.Timer"/> properties.
+			/// </summary>
 			public static class Timer
 			{
 				public const string PROCESS_MODE = "process_mode";
@@ -1494,6 +1779,9 @@
 				public const string AUTOSTART = "autostart";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.Tween"/> properties.
+			/// </summary>
 			public static class Tween
 			{
 				public const string REPEAT = "repeat";
@@ -1501,6 +1789,9 @@
 				public const string PLAYBACK_SPEED = "playback_speed";
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.Viewport"/> properties.
+			/// </summary>
 			public static class Viewport
 			{
 				public const string ARVR = "arvr";
@@ -1565,6 +1856,9 @@
 				#endregion SHADOW ATLAS
 			}
 
+			/// <summary>
+			/// Contains constants for <see cref="Godot.WorldEnvironment"/> properties.
+			/// </summary>
 			public static class WorldEnvironment
 			{
 				public const string ENVIRONMENT = "environment";
