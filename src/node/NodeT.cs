@@ -64,6 +64,15 @@
 		}
 
 		/// <summary>
+		/// Sets the parent of the child to the given parent (it may call <see cref="Godot.Node._Ready"/>).
+		/// </summary>
+		public static void SetParent(Godot.Node pChild, Godot.Node pParent)
+		{
+			pChild.GetParent().RemoveChild(pChild);
+			pParent.AddChild(pChild);
+		}
+
+		/// <summary>
 		/// Sets the <see cref="Godot.Node._Process"/> of the given <see cref="Godot.Node"/> and all its children to the given <see cref="bool"/>.
 		/// </summary>
 		private static void SetProcess(Godot.Node node, bool isProcessing)

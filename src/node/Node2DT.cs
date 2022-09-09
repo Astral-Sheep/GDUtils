@@ -172,5 +172,22 @@ namespace Com.Surbon.GDUtils.Node
 			/// </summary>
 			public virtual Area2D GetBody() => body;
 		}
+
+		/// <summary>
+		/// Sets the child's parent to the given parent.
+		/// </summary>
+		/// <param name="pKeepTransform">If true, the child's tranform will visualy stay the same.</param>
+		public static void SetParent(Node2D pChild, Node2D pParent, bool pKeepTransform)
+		{
+			Vector2 lGlobPos = pChild.GlobalPosition;
+			Vector2 lScale = pChild.Scale * pParent.Scale;
+			float lGlobRot = pChild.GlobalRotation;
+
+			pChild.GetParent().RemoveChild(pChild);
+			pParent.AddChild(pChild);
+			pChild.GlobalPosition = lGlobPos;
+			pChild.GlobalRotation = lGlobRot;
+			pChild.Scale = lScale / pParent.Scale;
+		}
 	}
 }
