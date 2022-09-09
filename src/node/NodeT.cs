@@ -68,8 +68,7 @@
 		/// </summary>
 		public static void SetParent(Godot.Node pChild, Godot.Node pParent)
 		{
-			Godot.Node lParent = pChild.GetParent();
-			lParent.RemoveChild(pChild);
+			pChild.GetParent().RemoveChild(pChild);
 			pParent.AddChild(pChild);
 		}
 
