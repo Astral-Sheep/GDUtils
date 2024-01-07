@@ -1,4 +1,4 @@
-This project will contain tools to help people programming with Godot engine.
+## This project will contain tools to help people programming with Godot engine 3.4.x.
 
 Installation:
 - compile the project
@@ -8,3 +8,5 @@ Installation:
 - click on Add -> Project Reference -> Browse -> Browse... -> GDUtils.dll
 
 It's now installed on your project :)
+
+## I will most likely not add anything anymore since I don't have time to work on it
